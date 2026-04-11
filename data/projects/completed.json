@@ -1,0 +1,127 @@
+[
+  {
+    "id": "manoj-heights",
+    "name": "Manoj Heights",
+    "tag": "Residential",
+    "shortLoc": "RTC Colony, Old Safilguda",
+    "motto": "\"Built with Precision, Delivered with Pride\"",
+    "location": "RTC Colony, Old Safilguda, Hyderabad",
+    "mapsQuery": "RTC+Colony+Old+Safilguda+Hyderabad+Telangana",
+    "dataDir": "data/Completed/manoj-heights",
+    "pdf": "data/Completed/manoj-heights/brochure.pdf",
+    "floorplan": ["data/Completed/manoj-heights/page-2.jpg"],
+    "brochure": [
+      "data/Completed/manoj-heights/page-1.jpg",
+      "data/Completed/manoj-heights/page-2.jpg"
+    ],
+    "desc": "A premium residential development in the heart of Old Safilguda, offering thoughtfully designed apartments with quality finishes, excellent ventilation, and convenient access to daily amenities.",
+    "specs": [
+      ["Type", "Residential Apartments"],
+      ["Location", "RTC Colony, Old Safilguda, Hyderabad"],
+      ["Status", "Completed & Handed Over"],
+      ["Structure", "R.C.C. Framed — Sarvotham/Jairaj Steel"],
+      ["Flooring", "24\" × 24\" Vitrified Tiles"],
+      ["Joinery", "Indian Teak Wood Frames & UPVC Windows"]
+    ]
+  },
+  {
+    "id": "manoj-homes-jawahar",
+    "name": "Manoj Homes",
+    "tag": "Residential",
+    "shortLoc": "Jawahar Nagar, Moulali",
+    "motto": "\"Your Dream Address in Jawahar Nagar\"",
+    "location": "Jawahar Nagar, Moulali, Hyderabad",
+    "mapsQuery": "Jawahar+Nagar+Moulali+Hyderabad+Telangana",
+    "dataDir": "data/Completed/manoj-homes-jawahar",
+    "pdf": "data/Completed/manoj-homes-jawahar/brochure.pdf",
+    "floorplan": ["data/Completed/manoj-homes-jawahar/page-2.jpg"],
+    "brochure": [
+      "data/Completed/manoj-homes-jawahar/page-1.jpg",
+      "data/Completed/manoj-homes-jawahar/page-2.jpg"
+    ],
+    "desc": "Premium residential apartments at Jawahar Nagar with modern interiors, quality plumbing and electrical work, and a serene environment close to Moulali. Each unit crafted to maximise light and space.",
+    "specs": [
+      ["Type", "Residential Apartments"],
+      ["Location", "Jawahar Nagar, Moulali, Hyderabad"],
+      ["Status", "Completed & Handed Over"],
+      ["Plumbing", "CERA WC & Taps — Concealed Piping"],
+      ["Electricals", "Nakoda Wiring — Anchor Penta Switches"],
+      ["Water", "Bore & Manjeera Connection"]
+    ]
+  },
+  {
+    "id": "manoj-homes-sainikpuri",
+    "name": "Manoj Homes",
+    "tag": "Residential",
+    "shortLoc": "Sainikpuri, Kapra",
+    "motto": "\"Quality Living in Sainikpuri\"",
+    "location": "Sainikpuri, Kapra, Hyderabad",
+    "mapsQuery": "Sainikpuri+Kapra+Hyderabad+Telangana",
+    "dataDir": "data/Completed/manoj-homes-sainikpuri",
+    "pdf": "data/Completed/manoj-homes-sainikpuri/brochure.pdf",
+    "floorplan": ["data/Completed/manoj-homes-sainikpuri/page-2.jpg"],
+    "brochure": [
+      "data/Completed/manoj-homes-sainikpuri/page-1.jpg",
+      "data/Completed/manoj-homes-sainikpuri/page-2.jpg"
+    ],
+    "desc": "Residential apartments in the sought-after Sainikpuri locality with spacious layouts, high-quality construction standards, and close proximity to schools, hospitals, and transport hubs.",
+    "specs": [
+      ["Type", "Residential Apartments"],
+      ["Location", "Sainikpuri, Kapra, Hyderabad"],
+      ["Status", "Completed & Handed Over"],
+      ["Walls", "9\" External & 4.5\" Internal Brick Walls"],
+      ["Painting", "Birla Wall Putty Interior + ACE Exterior"],
+      ["Amenities", "Lift, Bore Water, Manjeera Connection"]
+    ]
+  },
+  {
+    "id": "manoj-residency",
+    "name": "Manoj Residency",
+    "tag": "Residential",
+    "shortLoc": "Officers Colony, Neredmet",
+    "motto": "\"Luxury Redefined at Officers Colony\"",
+    "location": "Officers Colony, Neredmet, Hyderabad",
+    "mapsQuery": "Officers+Colony+Neredmet+Hyderabad+Telangana",
+    "dataDir": "data/Completed/manoj-residency",
+    "pdf": "data/Completed/manoj-residency/brochure.pdf",
+    "floorplan": ["data/Completed/manoj-residency/page-2.jpg"],
+    "brochure": [
+      "data/Completed/manoj-residency/page-1.jpg",
+      "data/Completed/manoj-residency/page-2.jpg"
+    ],
+    "desc": "An upscale residential project in Officers Colony, Neredmet — one of Hyderabad's most desirable neighbourhoods. Designed for families seeking a balance of comfort, quality, and prestige.",
+    "specs": [
+      ["Type", "Residential Apartments"],
+      ["Location", "Officers Colony, Neredmet, Hyderabad"],
+      ["Status", "Completed & Handed Over"],
+      ["Flooring", "24\" × 24\" Vitrified Tiles"],
+      ["Sanitary", "CERA — 7ft Glazed Tile Dado in Toilets"],
+      ["Lift", "6-Passenger Lift Provided"]
+    ]
+  },
+  {
+    "id": "harivillu",
+    "name": "Meghana Manoj Harivillu",
+    "tag": "Residential",
+    "shortLoc": "Hyderabad",
+    "motto": "\"A Home as Beautiful as Nature\"",
+    "location": "Hyderabad, Telangana",
+    "mapsQuery": "Meghana+Manoj+Constructions+Malkajgiri+Hyderabad",
+    "dataDir": "data/Completed/harivillu",
+    "pdf": "data/Completed/harivillu/brochure.pdf",
+    "floorplan": ["data/Completed/harivillu/page-2.jpg"],
+    "brochure": [
+      "data/Completed/harivillu/page-1.jpg",
+      "data/Completed/harivillu/page-2.jpg"
+    ],
+    "desc": "\"Harivillu\" — meaning Home of Hari — is a signature residential project by Meghana Manoj Constructions, blending traditional values with modern construction standards. A proud landmark in Hyderabad.",
+    "specs": [
+      ["Type", "Residential Apartments"],
+      ["Location", "Hyderabad, Telangana"],
+      ["Status", "Completed & Handed Over"],
+      ["Brand", "Meghana Manoj Constructions & Builders"],
+      ["Est.", "2017 — Building Trust Since Inception"],
+      ["Contact", "+91 92461 84092"]
+    ]
+  }
+]

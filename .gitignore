@@ -21,5 +21,8 @@ __pycache__/
 *.pyo
 .env
 
+# Processed PDFs — archive folder, not tracked in git
+data/Processed/
+
 # Logs
 *.log

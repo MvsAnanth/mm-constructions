@@ -1,6 +1,6 @@
 # Meghana Manoj Constructions & Builders
 
-Official website for **Meghana Manoj Constructions & Builders**, Hyderabad — a premium construction firm established in 2015, building on experience since 2002 (Meghna Constructions).
+Official website for **Meghana Manoj Constructions & Builders**, Hyderabad — a premium construction firm established in 2015, building on experience since 2002 (Meghana Constructions).
 
 ## Overview
 
@@ -90,12 +90,12 @@ Then open [http://localhost:8080](http://localhost:8080).
 
 ## Scripts Reference
 
-| Script | Command | Purpose |
-|--------|---------|---------|
-| `onboard.py` | `python3 scripts/onboard.py` | **Any OS:** onboard new PDFs (no npm needed) |
-| `onboard.sh` | `./scripts/onboard.sh` | Mac/Linux: onboard new PDFs (Node.js) |
-| `onboard.ps1` | `.\scripts\onboard.ps1` | Windows: onboard new PDFs (Node.js) |
-| `resolve-maps.js` | `node scripts/resolve-maps.js` | Refresh all map embed URLs |
+| Script            | Command                        | Purpose                                      |
+| ----------------- | ------------------------------ | -------------------------------------------- |
+| `onboard.py`      | `python3 scripts/onboard.py`   | **Any OS:** onboard new PDFs (no npm needed) |
+| `onboard.sh`      | `./scripts/onboard.sh`         | Mac/Linux: onboard new PDFs (Node.js)        |
+| `onboard.ps1`     | `.\scripts\onboard.ps1`        | Windows: onboard new PDFs (Node.js)          |
+| `resolve-maps.js` | `node scripts/resolve-maps.js` | Refresh all map embed URLs                   |
 
 ## Version
 

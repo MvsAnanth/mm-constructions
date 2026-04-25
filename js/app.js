@@ -3,6 +3,9 @@
 
 // ── PDF.js Setup ──
 
+
+
+
 pdfjsLib.GlobalWorkerOptions.workerSrc =
   'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
@@ -98,9 +101,9 @@ function submitQuote() {
   if (location) msg += `📍 *Location:* ${location}\n`;
   if (desc)     msg += `📝 *Details:* ${desc}\n`;
   msg += `━━━━━━━━━━━━━━━━━━━━\n`;
-  msg += `_Sent from meghanamanjoconstructions.com_`;
+  msg += `_Sent from ${window.APP_CONFIG.SITE_DOMAIN}_`;
 
-  window.open(`https://wa.me/919246184092?text=${encodeURIComponent(msg)}`, '_blank');
+  window.open(`https://wa.me/${window.APP_CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
 // ── Scroll Reveal ──
@@ -128,4 +131,21 @@ document.addEventListener('DOMContentLoaded', () => {
       nav.style.height = '72px';
     }
   });
+
+  // Hamburger menu toggle
+  const hamburger = document.getElementById('navHamburger');
+  const navLinks = document.getElementById('navLinks');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  }
 });

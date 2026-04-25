@@ -24,5 +24,11 @@ __pycache__/
 # Processed PDFs — archive folder, not tracked in git
 data/Processed/
 
+# Claude Code local config
+.claude/
+
+# graphify
+graphify-out/
+
 # Logs
 *.log

@@ -1,19 +1,20 @@
-// Ongoing Projects Data
-// To add a new project: copy an existing entry, update the fields, and add to this array.
 const ONGOING_PROJECTS = [
   {
     id: "manoj-castle",
     name: "Manoj Castle",
     tag: "Residential",
     shortLoc: "SaiRam, Malkajgiri",
-    motto: '"Building Trust, Brick by Brick."',
+    motto: "\"Building Trust, Brick by Brick.\"",
     location: "SaiRam, Malkajgiri, Hyderabad",
     mapsQuery: "SaiRam+Nagar+Malkajgiri+Hyderabad",
     mapsUrl: "https://maps.app.goo.gl/cYwy8Qd3Ms8LygQcA",
+    mapsEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d237.89190426717096!2d78.5362683011906!3d17.446764103206085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1775895884628!5m2!1sen!2sin",
     dataDir: "data/Ongoing/manoj-castle",
     pdf: "data/Ongoing/manoj-castle/brochure.pdf",
     thumbnail: "data/Ongoing/manoj-castle/building.png",
-    floorplan: ["data/Ongoing/manoj-castle/page-2.jpg"],
+    floorplan: [
+      "data/Ongoing/manoj-castle/page-2.jpg"
+    ],
     brochure: [
       "data/Ongoing/manoj-castle/page-1.jpg",
       "data/Ongoing/manoj-castle/page-2.jpg"
@@ -43,14 +44,15 @@ const ONGOING_PROJECTS = [
     name: "Manoj Homes",
     tag: "Residential",
     shortLoc: "Gautham Nagar, Malkajgiri",
-    motto: '"Quality Homes, Trusted Builder"',
+    motto: "\"Quality Homes, Trusted Builder\"",
     location: "Gautham Nagar, Malkajgiri, Hyderabad",
     mapsQuery: "Gautham+Nagar+Malkajgiri+Hyderabad",
-    mapsUrl: "https://maps.app.goo.gl/GMXxzvoim9XsrcDJA",
     dataDir: "data/Ongoing/manoj-homes-gautham",
     pdf: "data/Ongoing/manoj-homes-gautham/brochure.pdf",
     thumbnail: "data/Ongoing/manoj-homes-gautham/building.png",
-    floorplan: ["data/Ongoing/manoj-homes-gautham/page-2.jpg"],
+    floorplan: [
+      "data/Ongoing/manoj-homes-gautham/page-2.jpg"
+    ],
     brochure: [
       "data/Ongoing/manoj-homes-gautham/page-1.jpg",
       "data/Ongoing/manoj-homes-gautham/page-2.jpg"
@@ -73,44 +75,45 @@ const ONGOING_PROJECTS = [
       ["Water", "Bore & Manjeera Connection"]
     ]
   },
-    {
-      id: "manoj-bhavya-sri-homes",
-      name: "Manoj Bhavya Sri Homes",
-      tag: "Residential",
-      shortLoc: "Anandbagh, Malkajgiri",
-      motto: "\"Residential\"",
-      location: "Plot No-4, Sy No.22, Anandbagh, Malkajgiri",
-      mapsQuery: "Plot+No-4+Sy+No.22+Anandbagh+Malkajgiri",
-      dataDir: "data/Ongoing/manoj-bhavya-sri-homes",
-      pdf: "data/Ongoing/manoj-bhavya-sri-homes/brochure.pdf",
-      thumbnail: "data/Ongoing/manoj-bhavya-sri-homes/building.png",
-      floorplan: [
-        "data/Ongoing/manoj-bhavya-sri-homes/page-2.jpg"
-      ],
-      brochure: [
-        "data/Ongoing/manoj-bhavya-sri-homes/page-1.jpg",
-        "data/Ongoing/manoj-bhavya-sri-homes/page-2.jpg"
-      ],
-      desc: "A luxury residential project in Anandbagh, Malkajgiri, offering spacious 3 BHK flats (2000 SFT) with high-end specifications.",
-      meta: [
-        ["Anandbagh, Malkajgiri", "Location"],
-        ["Limited Units", "Availability"],
-        ["2000 SFT", "Area"]
-      ],
-      progress: {
-        label: "Structure complete, finishing in progress",
-        percent: 60,
-        note: "RCC structure is complete. Plastering and internal electrical work are currently underway."
-      },
-      specs: [
-        ["Location", "Plot No-4, Sy No.22, Anandbagh, Malkajgiri"],
-        ["Type", "Residential Apartments"],
-        ["Status", "Ongoing — Limited Units Available"],
-        ["Structure", "R.C.C. Framed — Sarvotham Steel"],
-        ["Flooring", "2' × 4' Vitrified Tiles"],
-        ["Sanitary & Taps", "CERA Sanitaryware & Jaquar Taps"],
-        ["Lift", "6-Passenger Lift of Standard Make"],
-        ["Backup", "Power Backup Generator & Common Area Lighting"]
-      ]
+  {
+    id: "manoj-homes-anandbagh",
+    name: "Manoj Homes",
+    tag: "Residential",
+    shortLoc: "CFL Colony, East Anand Bagh",
+    motto: "\"Residential\"",
+    location: "CFL Colony, East Anand Bagh, Malkajgiri",
+    mapsQuery: "CFL+Colony+East+Anand+Bagh+Malkajgiri",
+    mapsUrl: "https://maps.app.goo.gl/oypGt5kW8LSsxvQS6",
+    dataDir: "data/Ongoing/manoj-homes-anandbagh",
+    pdf: "data/Ongoing/manoj-homes-anandbagh/brochure.pdf",
+    floorplan: [
+      "data/Ongoing/manoj-homes-anandbagh/page-2.jpg"
+    ],
+    brochure: [
+      "data/Ongoing/manoj-homes-anandbagh/page-1.jpg",
+      "data/Ongoing/manoj-homes-anandbagh/page-2.jpg"
+    ],
+    desc: "A premium G+2 residential development in CFL Colony, East Anand Bagh, offering spacious layouts and quality construction.",
+    specs: [
+      ["Type", "Residential Apartments"],
+      ["Location", "CFL Colony, East Anand Bagh, Malkajgiri"],
+      ["Status", "Ongoing — Limited Units Available"],
+      ["Structure", "R.C.C. Framed — Sarvotham/Jairaj Steel"],
+      ["Flooring", "2' × 4' Vitrified Tiles"],
+      ["Electricals", "Concealed wiring (Nakoda Company), Anchor Penta switches"],
+      ["Plumbing", "Concealed pipeline, CERA sanitaryware & CERA taps"],
+      ["Water Supply", "Bore Water with Motor"]
+    ],
+    thumbnail: "data/Ongoing/manoj-homes-anandbagh/building.png",
+    meta: [
+      ["CFL Colony, East Anand Bagh", "Location"],
+      ["Limited Units", "Availability"],
+      ["1070 SFT", "Area"]
+    ],
+    progress: {
+      label: "Structure complete, finishing in progress",
+      percent: 60,
+      note: "RCC structure is complete. Plastering and internal electrical work are currently underway."
     }
+  }
 ];

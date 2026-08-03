@@ -1,18 +1,17 @@
-// Completed Projects Data
-// To add a new project: copy an existing entry, update the fields, and add to this array.
 const COMPLETED_PROJECTS = [
   {
     id: "manoj-heights",
     name: "Manoj Heights",
     tag: "Residential",
     shortLoc: "RTC Colony, Old Safilguda",
-    motto: '"Built with Precision, Delivered with Pride"',
+    motto: "\"Built with Precision, Delivered with Pride\"",
     location: "RTC Colony, Old Safilguda, Hyderabad",
     mapsQuery: "RTC+Colony+Old+Safilguda+Hyderabad+Telangana",
-    mapsUrl: "https://maps.app.goo.gl/Q6WG5oXaLr4XiLTF6",
     dataDir: "data/Completed/manoj-heights",
     pdf: "data/Completed/manoj-heights/brochure.pdf",
-    floorplan: ["data/Completed/manoj-heights/page-2.jpg"],
+    floorplan: [
+      "data/Completed/manoj-heights/page-2.jpg"
+    ],
     brochure: [
       "data/Completed/manoj-heights/page-1.jpg",
       "data/Completed/manoj-heights/page-2.jpg"
@@ -23,7 +22,7 @@ const COMPLETED_PROJECTS = [
       ["Location", "RTC Colony, Old Safilguda, Hyderabad"],
       ["Status", "Completed & Handed Over"],
       ["Structure", "R.C.C. Framed — Sarvotham/Jairaj Steel"],
-      ["Flooring", '24" × 24" Vitrified Tiles'],
+      ["Flooring", "24\" × 24\" Vitrified Tiles"],
       ["Joinery", "Indian Teak Wood Frames & UPVC Windows"]
     ]
   },
@@ -32,12 +31,14 @@ const COMPLETED_PROJECTS = [
     name: "Manoj Homes",
     tag: "Residential",
     shortLoc: "Jawahar Nagar, Moulali",
-    motto: '"Your Dream Address in Jawahar Nagar"',
+    motto: "\"Your Dream Address in Jawahar Nagar\"",
     location: "Jawahar Nagar, Moulali, Hyderabad",
     mapsQuery: "Jawahar+Nagar+Moulali+Hyderabad+Telangana",
     dataDir: "data/Completed/manoj-homes-jawahar",
     pdf: "data/Completed/manoj-homes-jawahar/brochure.pdf",
-    floorplan: ["data/Completed/manoj-homes-jawahar/page-2.jpg"],
+    floorplan: [
+      "data/Completed/manoj-homes-jawahar/page-2.jpg"
+    ],
     brochure: [
       "data/Completed/manoj-homes-jawahar/page-1.jpg",
       "data/Completed/manoj-homes-jawahar/page-2.jpg"
@@ -57,12 +58,14 @@ const COMPLETED_PROJECTS = [
     name: "Manoj Homes",
     tag: "Residential",
     shortLoc: "Sainikpuri, Kapra",
-    motto: '"Quality Living in Sainikpuri"',
+    motto: "\"Quality Living in Sainikpuri\"",
     location: "Sainikpuri, Kapra, Hyderabad",
     mapsQuery: "Sainikpuri+Kapra+Hyderabad+Telangana",
     dataDir: "data/Completed/manoj-homes-sainikpuri",
     pdf: "data/Completed/manoj-homes-sainikpuri/brochure.pdf",
-    floorplan: ["data/Completed/manoj-homes-sainikpuri/page-2.jpg"],
+    floorplan: [
+      "data/Completed/manoj-homes-sainikpuri/page-2.jpg"
+    ],
     brochure: [
       "data/Completed/manoj-homes-sainikpuri/page-1.jpg",
       "data/Completed/manoj-homes-sainikpuri/page-2.jpg"
@@ -72,7 +75,7 @@ const COMPLETED_PROJECTS = [
       ["Type", "Residential Apartments"],
       ["Location", "Sainikpuri, Kapra, Hyderabad"],
       ["Status", "Completed & Handed Over"],
-      ["Walls", '9" External & 4.5" Internal Brick Walls'],
+      ["Walls", "9\" External & 4.5\" Internal Brick Walls"],
       ["Painting", "Birla Wall Putty Interior + ACE Exterior"],
       ["Amenities", "Lift, Bore Water, Manjeera Connection"]
     ]
@@ -82,12 +85,14 @@ const COMPLETED_PROJECTS = [
     name: "Manoj Residency",
     tag: "Residential",
     shortLoc: "Officers Colony, Neredmet",
-    motto: '"Luxury Redefined at Officers Colony"',
+    motto: "\"Luxury Redefined at Officers Colony\"",
     location: "Officers Colony, Neredmet, Hyderabad",
     mapsQuery: "Officers+Colony+Neredmet+Hyderabad+Telangana",
     dataDir: "data/Completed/manoj-residency",
     pdf: "data/Completed/manoj-residency/brochure.pdf",
-    floorplan: ["data/Completed/manoj-residency/page-2.jpg"],
+    floorplan: [
+      "data/Completed/manoj-residency/page-2.jpg"
+    ],
     brochure: [
       "data/Completed/manoj-residency/page-1.jpg",
       "data/Completed/manoj-residency/page-2.jpg"
@@ -97,7 +102,7 @@ const COMPLETED_PROJECTS = [
       ["Type", "Residential Apartments"],
       ["Location", "Officers Colony, Neredmet, Hyderabad"],
       ["Status", "Completed & Handed Over"],
-      ["Flooring", '24" × 24" Vitrified Tiles'],
+      ["Flooring", "24\" × 24\" Vitrified Tiles"],
       ["Sanitary", "CERA — 7ft Glazed Tile Dado in Toilets"],
       ["Lift", "6-Passenger Lift Provided"]
     ]
@@ -107,12 +112,14 @@ const COMPLETED_PROJECTS = [
     name: "Meghana Manoj Enclave",
     tag: "Residential",
     shortLoc: "Dindayal Nagar, Malkajgiri",
-    motto: '"Not Just A Home, Also Your Dream"',
+    motto: "\"Not Just A Home, Also Your Dream\"",
     location: "Dindayal Nagar, Road No-6, Malkajgiri, Secunderabad",
     mapsQuery: "Dindayal+Nagar+Road+No+6+Malkajgiri+Secunderabad+Hyderabad",
     dataDir: "data/Completed/manoj-enclave",
     pdf: "data/Completed/manoj-enclave/brochure.pdf",
-    floorplan: ["data/Completed/manoj-enclave/page-2.jpg"],
+    floorplan: [
+      "data/Completed/manoj-enclave/page-2.jpg"
+    ],
     brochure: [
       "data/Completed/manoj-enclave/page-1.jpg",
       "data/Completed/manoj-enclave/page-2.jpg"
@@ -124,7 +131,7 @@ const COMPLETED_PROJECTS = [
       ["Status", "Completed & Handed Over"],
       ["Unit Size", "1150 Sqft per Flat"],
       ["Structure", "R.C.C. Framed — Sarvotham/Jairaj Steel"],
-      ["Flooring", '24" × 24" Vitrified Tiles'],
+      ["Flooring", "24\" × 24\" Vitrified Tiles"],
       ["Sanitary", "CERA WC & Wash Basins"],
       ["Electricals", "Nakoda Wiring — Anchor Penta Switches"],
       ["Lift", "4-Passenger Standard Make"],
@@ -137,12 +144,14 @@ const COMPLETED_PROJECTS = [
     name: "Manoj Homes",
     tag: "Residential",
     shortLoc: "Balaji Hill Colony, Uppal",
-    motto: '"Quality Living at Balaji Hills, Uppal"',
+    motto: "\"Quality Living at Balaji Hills, Uppal\"",
     location: "Venkateshvara Temple Road, Balaji Hill Colony, Uppal, Hyderabad",
     mapsQuery: "Balaji+Hill+Colony+Uppal+Hyderabad+Telangana",
     dataDir: "data/Completed/manoj-homes-uppal",
     pdf: "data/Completed/manoj-homes-uppal/brochure.pdf",
-    floorplan: ["data/Completed/manoj-homes-uppal/page-2.jpg"],
+    floorplan: [
+      "data/Completed/manoj-homes-uppal/page-2.jpg"
+    ],
     brochure: [
       "data/Completed/manoj-homes-uppal/page-1.jpg",
       "data/Completed/manoj-homes-uppal/page-2.jpg"
@@ -154,12 +163,12 @@ const COMPLETED_PROJECTS = [
       ["Status", "Completed & Handed Over"],
       ["Unit Size", "1025 Sqft per Flat"],
       ["Structure", "R.C.C. Framed — Sarvotham/Jairaj Steel"],
-      ["Flooring", '24" × 24" Vitrified Tiles'],
+      ["Flooring", "24\" × 24\" Vitrified Tiles"],
       ["Sanitary", "CERA — 7ft Glazed Tile Dado in Toilets"],
       ["Joinery", "Indian Teak Wood Frames & UPVC Windows"],
       ["Electricals", "Polycab Wiring — Anchor Penta Switches"],
       ["Lift", "6-Passenger Johnson Make"],
-      ["Water", '6.5" Bore & Manjeera Connection']
+      ["Water", "6.5\" Bore & Manjeera Connection"]
     ]
   },
   {
@@ -167,12 +176,14 @@ const COMPLETED_PROJECTS = [
     name: "Manoj Homes",
     tag: "Residential",
     shortLoc: "Goutham Nagar, Malkajgiri",
-    motto: '"Spacious 3BHK Living in Goutham Nagar"',
+    motto: "\"Spacious 3BHK Living in Goutham Nagar\"",
     location: "Goutham Nagar, Malkajgiri, Hyderabad",
     mapsQuery: "Goutham+Nagar+Malkajgiri+Hyderabad+Telangana",
     dataDir: "data/Completed/manoj-homes-goutham",
     pdf: "data/Completed/manoj-homes-goutham/brochure.pdf",
-    floorplan: ["data/Completed/manoj-homes-goutham/page-2.jpg"],
+    floorplan: [
+      "data/Completed/manoj-homes-goutham/page-2.jpg"
+    ],
     brochure: [
       "data/Completed/manoj-homes-goutham/page-1.jpg",
       "data/Completed/manoj-homes-goutham/page-2.jpg"
@@ -184,8 +195,8 @@ const COMPLETED_PROJECTS = [
       ["Status", "Completed & Handed Over"],
       ["Unit Size", "1900 Sqft per Flat"],
       ["Structure", "R.C.C. Framed — Sarvotham/Jairaj Steel"],
-      ["Walls", '9" External & 4.5" Internal Brick Walls'],
-      ["Flooring", '24" × 24" Vitrified Tiles'],
+      ["Walls", "9\" External & 4.5\" Internal Brick Walls"],
+      ["Flooring", "24\" × 24\" Vitrified Tiles"],
       ["Sanitary", "CERA WC & Wash Basins — Concealed Piping"],
       ["Joinery", "Indian Teak Wood Frames & UPVC Windows"],
       ["Electricals", "Polycab Wiring — Anchor Penta Switches"],
@@ -197,17 +208,19 @@ const COMPLETED_PROJECTS = [
     name: "Meghana Manoj Harivillu",
     tag: "Residential",
     shortLoc: "Hyderabad",
-    motto: '"A Home as Beautiful as Nature"',
+    motto: "\"A Home as Beautiful as Nature\"",
     location: "Hyderabad, Telangana",
     mapsQuery: "Meghana+Manoj+Constructions+Malkajgiri+Hyderabad",
     dataDir: "data/Completed/harivillu",
     pdf: "data/Completed/harivillu/brochure.pdf",
-    floorplan: ["data/Completed/harivillu/page-2.jpg"],
+    floorplan: [
+      "data/Completed/harivillu/page-2.jpg"
+    ],
     brochure: [
       "data/Completed/harivillu/page-1.jpg",
       "data/Completed/harivillu/page-2.jpg"
     ],
-    desc: '"Harivillu" — meaning Home of Hari — is a signature residential project by Meghana Manoj Constructions, blending traditional values with modern construction standards. A proud landmark in Hyderabad.',
+    desc: "\"Harivillu\" — meaning Home of Hari — is a signature residential project by Meghana Manoj Constructions, blending traditional values with modern construction standards. A proud landmark in Hyderabad.",
     specs: [
       ["Type", "Residential Apartments"],
       ["Location", "Hyderabad, Telangana"],
@@ -217,34 +230,33 @@ const COMPLETED_PROJECTS = [
       ["Contact", "+91 92461 84092"]
     ]
   },
-    {
-      id: "manoj-homes-anandbagh",
-      name: "Manoj Homes",
-      tag: "Residential",
-      shortLoc: "CFL Colony, East Anand Bagh",
-      motto: "\"Residential\"",
-      location: "CFL Colony, East Anand Bagh, Malkajgiri",
-      mapsQuery: "CFL+Colony+East+Anand+Bagh+Malkajgiri",
-      mapsUrl: "https://maps.app.goo.gl/oypGt5kW8LSsxvQS6",
-      dataDir: "data/Completed/manoj-homes-anandbagh",
-      pdf: "data/Completed/manoj-homes-anandbagh/brochure.pdf",
-      floorplan: [
-        "data/Completed/manoj-homes-anandbagh/page-2.jpg"
-      ],
-      brochure: [
-        "data/Completed/manoj-homes-anandbagh/page-1.jpg",
-        "data/Completed/manoj-homes-anandbagh/page-2.jpg"
-      ],
-      desc: "A premium G+2 residential development in CFL Colony, East Anand Bagh, offering spacious layouts and quality construction.",
-      specs: [
-        ["Type", "Residential Apartments"],
-        ["Location", "CFL Colony, East Anand Bagh, Malkajgiri"],
-        ["Status", "Completed & Handed Over"],
-        ["Structure", "R.C.C. Framed — Sarvotham/Jairaj Steel"],
-        ["Flooring", "2' × 4' Vitrified Tiles"],
-        ["Electricals", "Concealed wiring (Nakoda Company), Anchor Penta switches"],
-        ["Plumbing", "Concealed pipeline, CERA sanitaryware & CERA taps"],
-        ["Water Supply", "Bore Water with Motor"]
-      ]
-    }
+  {
+    id: "manoj-bhavya-sri-homes",
+    name: "Manoj Bhavya Sri Homes",
+    tag: "Residential",
+    shortLoc: "Anandbagh, Malkajgiri",
+    motto: "\"Residential\"",
+    location: "Plot No-4, Sy No.22, Anandbagh, Malkajgiri",
+    mapsQuery: "Plot+No-4+Sy+No.22+Anandbagh+Malkajgiri",
+    dataDir: "data/Completed/manoj-bhavya-sri-homes",
+    pdf: "data/Completed/manoj-bhavya-sri-homes/brochure.pdf",
+    floorplan: [
+      "data/Completed/manoj-bhavya-sri-homes/page-2.jpg"
+    ],
+    brochure: [
+      "data/Completed/manoj-bhavya-sri-homes/page-1.jpg",
+      "data/Completed/manoj-bhavya-sri-homes/page-2.jpg"
+    ],
+    desc: "A luxury residential project in Anandbagh, Malkajgiri, offering spacious 3 BHK flats (2000 SFT) with high-end specifications.",
+    specs: [
+      ["Location", "Plot No-4, Sy No.22, Anandbagh, Malkajgiri"],
+      ["Type", "Residential Apartments"],
+      ["Status", "Completed & Handed Over"],
+      ["Structure", "R.C.C. Framed — Sarvotham Steel"],
+      ["Flooring", "2' × 4' Vitrified Tiles"],
+      ["Sanitary & Taps", "CERA Sanitaryware & Jaquar Taps"],
+      ["Lift", "6-Passenger Lift of Standard Make"],
+      ["Backup", "Power Backup Generator & Common Area Lighting"]
+    ]
+  }
 ];

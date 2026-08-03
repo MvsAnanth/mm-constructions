@@ -124,51 +124,32 @@
     ]
   },
   {
-    "id": "manoj-bhavya-sri-homes",
-    "name": "Manoj Bhavya Sri Homes",
+    "id": "manoj-homes-anandbagh",
+    "name": "Manoj Homes",
     "tag": "Residential",
-    "shortLoc": "Anandbagh, Malkajgiri",
+    "shortLoc": "CFL Colony, East Anand Bagh",
     "motto": "\"Residential\"",
-    "location": "Plot No-4, Sy No.22, Anandbagh, Malkajgiri",
-    "mapsQuery": "Plot+No-4+Sy+No.22+Anandbagh+Malkajgiri",
-    "dataDir": "data/Ongoing/manoj-bhavya-sri-homes",
-    "pdf": "data/Ongoing/manoj-bhavya-sri-homes/brochure.pdf",
-    "thumbnail": "data/Ongoing/manoj-bhavya-sri-homes/building.png",
+    "location": "CFL Colony, East Anand Bagh, Malkajgiri",
+    "mapsQuery": "CFL+Colony+East+Anand+Bagh+Malkajgiri",
+    "mapsUrl": "https://maps.app.goo.gl/oypGt5kW8LSsxvQS6",
+    "dataDir": "data/Ongoing/manoj-homes-anandbagh",
+    "pdf": "data/Ongoing/manoj-homes-anandbagh/brochure.pdf",
     "floorplan": [
-      "data/Ongoing/manoj-bhavya-sri-homes/page-2.jpg"
+      "data/Ongoing/manoj-homes-anandbagh/page-2.jpg"
     ],
     "brochure": [
-      "data/Ongoing/manoj-bhavya-sri-homes/page-1.jpg",
-      "data/Ongoing/manoj-bhavya-sri-homes/page-2.jpg"
+      "data/Ongoing/manoj-homes-anandbagh/page-1.jpg",
+      "data/Ongoing/manoj-homes-anandbagh/page-2.jpg"
     ],
-    "desc": "A luxury residential project in Anandbagh, Malkajgiri, offering spacious 3 BHK flats (2000 SFT) with high-end specifications.",
-    "meta": [
-      [
-        "Anandbagh, Malkajgiri",
-        "Location"
-      ],
-      [
-        "Limited Units",
-        "Availability"
-      ],
-      [
-        "2000 SFT",
-        "Area"
-      ]
-    ],
-    "progress": {
-      "label": "Structure complete, finishing in progress",
-      "percent": 60,
-      "note": "RCC structure is complete. Plastering and internal electrical work are currently underway."
-    },
+    "desc": "A premium G+2 residential development in CFL Colony, East Anand Bagh, offering spacious layouts and quality construction.",
     "specs": [
-      [
-        "Location",
-        "Plot No-4, Sy No.22, Anandbagh, Malkajgiri"
-      ],
       [
         "Type",
         "Residential Apartments"
+      ],
+      [
+        "Location",
+        "CFL Colony, East Anand Bagh, Malkajgiri"
       ],
       [
         "Status",
@@ -176,24 +157,44 @@
       ],
       [
         "Structure",
-        "R.C.C. Framed — Sarvotham Steel"
+        "R.C.C. Framed — Sarvotham/Jairaj Steel"
       ],
       [
         "Flooring",
         "2' × 4' Vitrified Tiles"
       ],
       [
-        "Sanitary & Taps",
-        "CERA Sanitaryware & Jaquar Taps"
+        "Electricals",
+        "Concealed wiring (Nakoda Company), Anchor Penta switches"
       ],
       [
-        "Lift",
-        "6-Passenger Lift of Standard Make"
+        "Plumbing",
+        "Concealed pipeline, CERA sanitaryware & CERA taps"
       ],
       [
-        "Backup",
-        "Power Backup Generator & Common Area Lighting"
+        "Water Supply",
+        "Bore Water with Motor"
       ]
-    ]
+    ],
+    "thumbnail": "data/Ongoing/manoj-homes-anandbagh/building.png",
+    "meta": [
+      [
+        "CFL Colony, East Anand Bagh",
+        "Location"
+      ],
+      [
+        "Limited Units",
+        "Availability"
+      ],
+      [
+        "1070 SFT",
+        "Area"
+      ]
+    ],
+    "progress": {
+      "label": "Structure complete, finishing in progress",
+      "percent": 60,
+      "note": "RCC structure is complete. Plastering and internal electrical work are currently underway."
+    }
   }
 ]

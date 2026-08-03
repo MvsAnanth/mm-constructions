@@ -77,7 +77,7 @@ const ONGOING_PROJECTS = [
   },
   {
     id: "manoj-homes-anandbagh",
-    name: "Manoj Homes",
+    name: "Meghana Manoj Constructions",
     tag: "Residential",
     shortLoc: "CFL Colony, East Anand Bagh",
     motto: "\"Residential\"",

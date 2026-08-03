@@ -51,6 +51,10 @@ def extract_coords(full_url):
     match = re.search(r'/place/(-?\d+\.\d+),(-?\d+\.\d+)', full_url)
     if match:
         return match.group(1), match.group(2)
+    # Fallback: search/lat,+lng in path
+    match = re.search(r'/search/(-?\d+\.\d+),\s*\+?(-?\d+\.\d+)', full_url)
+    if match:
+        return match.group(1), match.group(2)
     # Fallback: q=lat,lng in query string
     match = re.search(r'[?&]q=(-?\d+\.\d+),(-?\d+\.\d+)', full_url)
     if match:

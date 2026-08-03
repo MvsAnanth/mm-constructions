@@ -12,16 +12,27 @@
     "dataDir": "data/Ongoing/manoj-castle",
     "pdf": "data/Ongoing/manoj-castle/brochure.pdf",
     "thumbnail": "data/Ongoing/manoj-castle/building.png",
-    "floorplan": ["data/Ongoing/manoj-castle/page-2.jpg"],
+    "floorplan": [
+      "data/Ongoing/manoj-castle/page-2.jpg"
+    ],
     "brochure": [
       "data/Ongoing/manoj-castle/page-1.jpg",
       "data/Ongoing/manoj-castle/page-2.jpg"
     ],
     "desc": "Premium residential development featuring luxury 2 BHK & 3 BHK apartments (1200 SFT each) with high-end teak wood joinery and UPVC windows.",
     "meta": [
-      ["SaiRam, Malkajgiri", "Location"],
-      ["Units 1 & 2", "Availability"],
-      ["1200 SFT", "Area"]
+      [
+        "SaiRam, Malkajgiri",
+        "Location"
+      ],
+      [
+        "Units 1 & 2",
+        "Availability"
+      ],
+      [
+        "1200 SFT",
+        "Area"
+      ]
     ],
     "progress": {
       "label": "Finishing works",
@@ -29,12 +40,30 @@
       "note": "Structure completion reached. Final painting and woodwork in progress."
     },
     "specs": [
-      ["Location", "SaiRam, Malkajgiri, Hyderabad"],
-      ["Area", "1200 SFT (Super Built-up)"],
-      ["Units", "2 & 3 BHK Apartments"],
-      ["Plot", "Premium Corner Plot"],
-      ["Facing", "East & North Facing"],
-      ["Water", "Bore & Manjeera Connection"]
+      [
+        "Location",
+        "SaiRam, Malkajgiri, Hyderabad"
+      ],
+      [
+        "Area",
+        "1200 SFT (Super Built-up)"
+      ],
+      [
+        "Units",
+        "2 & 3 BHK Apartments"
+      ],
+      [
+        "Plot",
+        "Premium Corner Plot"
+      ],
+      [
+        "Facing",
+        "East & North Facing"
+      ],
+      [
+        "Water",
+        "Bore & Manjeera Connection"
+      ]
     ]
   },
   {
@@ -48,16 +77,27 @@
     "dataDir": "data/Ongoing/manoj-homes-gautham",
     "pdf": "data/Ongoing/manoj-homes-gautham/brochure.pdf",
     "thumbnail": "data/Ongoing/manoj-homes-gautham/building.png",
-    "floorplan": ["data/Ongoing/manoj-homes-gautham/page-2.jpg"],
+    "floorplan": [
+      "data/Ongoing/manoj-homes-gautham/page-2.jpg"
+    ],
     "brochure": [
       "data/Ongoing/manoj-homes-gautham/page-1.jpg",
       "data/Ongoing/manoj-homes-gautham/page-2.jpg"
     ],
     "desc": "Premium residential apartments with modern amenities, quality construction, and excellent connectivity in Gautham Nagar, Malkajgiri.",
     "meta": [
-      ["Gautham Nagar, Malkajgiri", "Location"],
-      ["Limited Units", "Availability"],
-      ["Spacious", "Apartments"]
+      [
+        "Gautham Nagar, Malkajgiri",
+        "Location"
+      ],
+      [
+        "Limited Units",
+        "Availability"
+      ],
+      [
+        "Spacious",
+        "Apartments"
+      ]
     ],
     "progress": {
       "label": "Construction in progress",
@@ -65,10 +105,95 @@
       "note": "Construction in progress. Structure and finishing works underway."
     },
     "specs": [
-      ["Location", "Gautham Nagar, Malkajgiri, Hyderabad"],
-      ["Type", "Premium Residential Apartments"],
-      ["Status", "Ongoing — Limited Units Available"],
-      ["Water", "Bore & Manjeera Connection"]
+      [
+        "Location",
+        "Gautham Nagar, Malkajgiri, Hyderabad"
+      ],
+      [
+        "Type",
+        "Premium Residential Apartments"
+      ],
+      [
+        "Status",
+        "Ongoing — Limited Units Available"
+      ],
+      [
+        "Water",
+        "Bore & Manjeera Connection"
+      ]
+    ]
+  },
+  {
+    "id": "manoj-bhavya-sri-homes",
+    "name": "Manoj Bhavya Sri Homes",
+    "tag": "Residential",
+    "shortLoc": "Anandbagh, Malkajgiri",
+    "motto": "\"Residential\"",
+    "location": "Plot No-4, Sy No.22, Anandbagh, Malkajgiri",
+    "mapsQuery": "Plot+No-4+Sy+No.22+Anandbagh+Malkajgiri",
+    "dataDir": "data/Ongoing/manoj-bhavya-sri-homes",
+    "pdf": "data/Ongoing/manoj-bhavya-sri-homes/brochure.pdf",
+    "thumbnail": "data/Ongoing/manoj-bhavya-sri-homes/building.png",
+    "floorplan": [
+      "data/Ongoing/manoj-bhavya-sri-homes/page-2.jpg"
+    ],
+    "brochure": [
+      "data/Ongoing/manoj-bhavya-sri-homes/page-1.jpg",
+      "data/Ongoing/manoj-bhavya-sri-homes/page-2.jpg"
+    ],
+    "desc": "A luxury residential project in Anandbagh, Malkajgiri, offering spacious 3 BHK flats (2000 SFT) with high-end specifications.",
+    "meta": [
+      [
+        "Anandbagh, Malkajgiri",
+        "Location"
+      ],
+      [
+        "Limited Units",
+        "Availability"
+      ],
+      [
+        "2000 SFT",
+        "Area"
+      ]
+    ],
+    "progress": {
+      "label": "Structure complete, finishing in progress",
+      "percent": 60,
+      "note": "RCC structure is complete. Plastering and internal electrical work are currently underway."
+    },
+    "specs": [
+      [
+        "Location",
+        "Plot No-4, Sy No.22, Anandbagh, Malkajgiri"
+      ],
+      [
+        "Type",
+        "Residential Apartments"
+      ],
+      [
+        "Status",
+        "Ongoing — Limited Units Available"
+      ],
+      [
+        "Structure",
+        "R.C.C. Framed — Sarvotham Steel"
+      ],
+      [
+        "Flooring",
+        "2' × 4' Vitrified Tiles"
+      ],
+      [
+        "Sanitary & Taps",
+        "CERA Sanitaryware & Jaquar Taps"
+      ],
+      [
+        "Lift",
+        "6-Passenger Lift of Standard Make"
+      ],
+      [
+        "Backup",
+        "Power Backup Generator & Common Area Lighting"
+      ]
     ]
   }
 ]

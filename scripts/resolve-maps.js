@@ -91,6 +91,9 @@ function extractCoords(fullUrl) {
   // /place/lat,lng
   m = fullUrl.match(/\/place\/(-?\d+\.\d+),(-?\d+\.\d+)/);
   if (m) return [m[1], m[2]];
+  // /search/lat,+lng
+  m = fullUrl.match(/\/search\/(-?\d+\.\d+),\s*\+?(-?\d+\.\d+)/);
+  if (m) return [m[1], m[2]];
   // ?q=lat,lng
   m = fullUrl.match(/[?&]q=(-?\d+\.\d+),(-?\d+\.\d+)/);
   if (m) return [m[1], m[2]];

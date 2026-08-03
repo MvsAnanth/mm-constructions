@@ -216,5 +216,35 @@ const COMPLETED_PROJECTS = [
       ["Est.", "2017 — Building Trust Since Inception"],
       ["Contact", "+91 92461 84092"]
     ]
-  }
+  },
+    {
+      id: "manoj-homes-anandbagh",
+      name: "Manoj Homes",
+      tag: "Residential",
+      shortLoc: "CFL Colony, East Anand Bagh",
+      motto: "\"Residential\"",
+      location: "CFL Colony, East Anand Bagh, Malkajgiri",
+      mapsQuery: "CFL+Colony+East+Anand+Bagh+Malkajgiri",
+      mapsUrl: "https://maps.app.goo.gl/oypGt5kW8LSsxvQS6",
+      dataDir: "data/Completed/manoj-homes-anandbagh",
+      pdf: "data/Completed/manoj-homes-anandbagh/brochure.pdf",
+      floorplan: [
+        "data/Completed/manoj-homes-anandbagh/page-2.jpg"
+      ],
+      brochure: [
+        "data/Completed/manoj-homes-anandbagh/page-1.jpg",
+        "data/Completed/manoj-homes-anandbagh/page-2.jpg"
+      ],
+      desc: "A premium G+2 residential development in CFL Colony, East Anand Bagh, offering spacious layouts and quality construction.",
+      specs: [
+        ["Type", "Residential Apartments"],
+        ["Location", "CFL Colony, East Anand Bagh, Malkajgiri"],
+        ["Status", "Completed & Handed Over"],
+        ["Structure", "R.C.C. Framed — Sarvotham/Jairaj Steel"],
+        ["Flooring", "2' × 4' Vitrified Tiles"],
+        ["Electricals", "Concealed wiring (Nakoda Company), Anchor Penta switches"],
+        ["Plumbing", "Concealed pipeline, CERA sanitaryware & CERA taps"],
+        ["Water Supply", "Bore Water with Motor"]
+      ]
+    }
 ];

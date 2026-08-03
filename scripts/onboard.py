@@ -261,6 +261,7 @@ def extract_coords(full_url):
     patterns = [
         r"/@(-?\d+\.\d+),(-?\d+\.\d+)",
         r"/place/(-?\d+\.\d+),(-?\d+\.\d+)",
+        r"/search/(-?\d+\.\d+),\s*\+?(-?\d+\.\d+)",
         r"[?&]q=(-?\d+\.\d+),(-?\d+\.\d+)",
     ]
     for pat in patterns:

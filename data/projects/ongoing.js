@@ -72,5 +72,45 @@ const ONGOING_PROJECTS = [
       ["Status", "Ongoing — Limited Units Available"],
       ["Water", "Bore & Manjeera Connection"]
     ]
-  }
+  },
+    {
+      id: "manoj-bhavya-sri-homes",
+      name: "Manoj Bhavya Sri Homes",
+      tag: "Residential",
+      shortLoc: "Anandbagh, Malkajgiri",
+      motto: "\"Residential\"",
+      location: "Plot No-4, Sy No.22, Anandbagh, Malkajgiri",
+      mapsQuery: "Plot+No-4+Sy+No.22+Anandbagh+Malkajgiri",
+      dataDir: "data/Ongoing/manoj-bhavya-sri-homes",
+      pdf: "data/Ongoing/manoj-bhavya-sri-homes/brochure.pdf",
+      thumbnail: "data/Ongoing/manoj-bhavya-sri-homes/building.png",
+      floorplan: [
+        "data/Ongoing/manoj-bhavya-sri-homes/page-2.jpg"
+      ],
+      brochure: [
+        "data/Ongoing/manoj-bhavya-sri-homes/page-1.jpg",
+        "data/Ongoing/manoj-bhavya-sri-homes/page-2.jpg"
+      ],
+      desc: "A luxury residential project in Anandbagh, Malkajgiri, offering spacious 3 BHK flats (2000 SFT) with high-end specifications.",
+      meta: [
+        ["Anandbagh, Malkajgiri", "Location"],
+        ["Limited Units", "Availability"],
+        ["2000 SFT", "Area"]
+      ],
+      progress: {
+        label: "Structure complete, finishing in progress",
+        percent: 60,
+        note: "RCC structure is complete. Plastering and internal electrical work are currently underway."
+      },
+      specs: [
+        ["Location", "Plot No-4, Sy No.22, Anandbagh, Malkajgiri"],
+        ["Type", "Residential Apartments"],
+        ["Status", "Ongoing — Limited Units Available"],
+        ["Structure", "R.C.C. Framed — Sarvotham Steel"],
+        ["Flooring", "2' × 4' Vitrified Tiles"],
+        ["Sanitary & Taps", "CERA Sanitaryware & Jaquar Taps"],
+        ["Lift", "6-Passenger Lift of Standard Make"],
+        ["Backup", "Power Backup Generator & Common Area Lighting"]
+      ]
+    }
 ];

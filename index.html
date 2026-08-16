@@ -33,110 +33,6 @@
 
 <body>
 
-  <!-- SITE LOADER -->
-  <div id="site-loader" role="status" aria-live="polite">
-    <div class="loader-static">
-      <div class="loader-static-bar"><span></span></div>
-    </div>
-    <div class="loader-scene" id="loaderScene"></div>
-    <div class="loader-brand">
-      <div class="loader-logo">Meghana Manoj</div>
-      <div class="loader-caption" id="loaderCaption">Laying the foundation&hellip;</div>
-      <div class="loader-dots"><span></span><span></span><span></span></div>
-    </div>
-    <span class="sr-only">Loading Meghana Manoj Constructions&hellip;</span>
-  </div>
-
-  <template id="loaderTplHammer">
-    <svg class="loader-illustration illustration-hammer" viewBox="0 0 160 160" role="img" aria-hidden="true">
-      <ellipse class="lw-shadow" cx="80" cy="146" rx="46" ry="7" />
-      <rect class="lw-wall" x="96" y="70" width="46" height="70" rx="2" />
-      <rect class="lw-brick lw-brick-1" x="98" y="122" width="20" height="16" rx="1" />
-      <rect class="lw-brick lw-brick-2" x="120" y="122" width="20" height="16" rx="1" />
-      <rect class="lw-brick lw-brick-new" x="98" y="104" width="20" height="16" rx="1" />
-      <g class="lw-figure">
-        <rect class="lw-leg lw-leg-back" x="58" y="112" width="12" height="30" rx="4" />
-        <rect class="lw-leg lw-leg-front" x="74" y="112" width="12" height="30" rx="4" />
-        <rect class="lw-torso" x="52" y="78" width="40" height="38" rx="6" />
-        <rect class="lw-vest" x="52" y="78" width="40" height="20" rx="6" />
-        <g class="lw-arm-group">
-          <rect class="lw-arm-upper" x="70" y="70" width="12" height="30" rx="6" />
-          <g class="lw-hammer-arm">
-            <rect class="lw-arm-lower" x="70" y="52" width="11" height="26" rx="5" />
-            <rect class="lw-hammer-handle" x="74" y="30" width="5" height="26" rx="2" />
-            <rect class="lw-hammer-head" x="66" y="20" width="24" height="12" rx="2" />
-          </g>
-        </g>
-        <circle class="lw-head" cx="72" cy="60" r="12" />
-        <path class="lw-helmet" d="M58 58 a14 12 0 0 1 28 0 z" />
-      </g>
-    </svg>
-  </template>
-
-  <template id="loaderTplDrill">
-    <svg class="loader-illustration illustration-drill" viewBox="0 0 160 160" role="img" aria-hidden="true">
-      <ellipse class="lw-shadow" cx="80" cy="146" rx="46" ry="7" />
-      <rect class="lw-beam" x="94" y="60" width="14" height="80" rx="2" />
-      <g class="lw-sparks">
-        <circle class="lw-spark s1" cx="106" cy="78" r="2" />
-        <circle class="lw-spark s2" cx="112" cy="86" r="2" />
-        <circle class="lw-spark s3" cx="104" cy="92" r="1.6" />
-      </g>
-      <g class="lw-figure">
-        <rect class="lw-leg lw-leg-back" x="54" y="112" width="12" height="30" rx="4" />
-        <rect class="lw-leg lw-leg-front" x="70" y="112" width="12" height="30" rx="4" />
-        <rect class="lw-torso" x="48" y="76" width="40" height="38" rx="6" />
-        <rect class="lw-vest" x="48" y="76" width="40" height="20" rx="6" />
-        <g class="lw-drill-arm">
-          <rect class="lw-arm-upper" x="80" y="72" width="12" height="26" rx="6" />
-          <rect class="lw-arm-lower" x="86" y="80" width="26" height="11" rx="5" />
-          <rect class="lw-drill-body" x="80" y="72" width="26" height="16" rx="4" />
-          <rect class="lw-drill-bit" x="104" y="78" width="14" height="4" rx="2" />
-        </g>
-        <circle class="lw-head" cx="68" cy="58" r="12" />
-        <path class="lw-helmet" d="M54 56 a14 12 0 0 1 28 0 z" />
-      </g>
-    </svg>
-  </template>
-
-  <template id="loaderTplTrowel">
-    <svg class="loader-illustration illustration-trowel" viewBox="0 0 160 160" role="img" aria-hidden="true">
-      <ellipse class="lw-shadow" cx="80" cy="146" rx="46" ry="7" />
-      <rect class="lw-row" x="46" y="128" width="70" height="14" rx="1" />
-      <rect class="lw-brick lw-brick-new" x="70" y="112" width="22" height="14" rx="1" />
-      <g class="lw-figure">
-        <rect class="lw-leg lw-leg-back" x="56" y="112" width="12" height="30" rx="4" />
-        <rect class="lw-leg lw-leg-front" x="72" y="112" width="12" height="30" rx="4" />
-        <rect class="lw-torso" x="50" y="78" width="40" height="38" rx="6" />
-        <rect class="lw-vest" x="50" y="78" width="40" height="20" rx="6" />
-        <g class="lw-trowel-arm">
-          <rect class="lw-arm-upper" x="78" y="72" width="12" height="28" rx="6" />
-          <rect class="lw-arm-lower" x="88" y="96" width="24" height="10" rx="5" />
-          <path class="lw-trowel-blade" d="M108 92 l20 -8 l4 6 l-18 10 z" />
-        </g>
-        <circle class="lw-head" cx="70" cy="58" r="12" />
-        <path class="lw-helmet" d="M56 56 a14 12 0 0 1 28 0 z" />
-      </g>
-    </svg>
-  </template>
-
-  <template id="loaderTplCrane">
-    <svg class="loader-illustration illustration-crane" viewBox="0 0 160 160" role="img" aria-hidden="true">
-      <ellipse class="lw-shadow" cx="80" cy="146" rx="50" ry="7" />
-      <rect class="lw-mast" x="36" y="30" width="10" height="112" rx="2" />
-      <g class="lw-arm-pivot">
-        <rect class="lw-jib" x="40" y="34" width="86" height="8" rx="2" />
-        <line class="lw-cable" x1="118" y1="42" x2="118" y2="92" />
-        <g class="lw-hook-group">
-          <rect class="lw-beam-load" x="98" y="92" width="40" height="12" rx="2" />
-        </g>
-      </g>
-      <rect class="lw-cab" x="30" y="36" width="18" height="16" rx="2" />
-    </svg>
-  </template>
-
-  <script src="js/loader.js"></script>
-
   <!-- NAV -->
   <nav>
     <a href="#home" class="nav-logo">
@@ -161,32 +57,20 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-photo-wrap" id="heroPhotoWrap">
-      <div class="hero-photo"></div>
-    </div>
-    <div class="hero-scrim"></div>
-    <div class="hero-badge-tab">
-      <span>Est. 2002</span>
-    </div>
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
     <div class="hero-content">
       <div class="hero-eyebrow">Building Trust, Brick by Brick.</div>
       <h1>We Build<br /><em>Masterpieces</em> That<br />Last Forever</h1>
-      <div class="hero-content-foot">
-        <div class="hero-copy">
-          <p class="hero-tagline">Building on experience since 2002 with Meghana Constructions, Meghana Manoj
-            Constructions was launched in 2015.</p>
-          <p class="hero-sub">Premium residential development featuring 2 & 3 BHK apartments with uncompromising
-            quality and transparent processes. Experience "Manoj Castle" — your vision, masterfully built.</p>
-        </div>
-        <div class="hero-btns">
-          <a href="#quote" class="btn-primary">📋 Get Free Quote</a>
-          <a href="#projects" class="btn-outline">View Projects →</a>
-        </div>
+      <p class="hero-tagline">Building on experience since 2002 with Meghana Constructions, Meghana Manoj Constructions
+        was launched in 2015.</p>
+      <p class="hero-sub">Premium residential development featuring 2 & 3 BHK apartments with uncompromising quality and
+        transparent processes. Experience "Manoj Castle" — your vision, masterfully built.</p>
+      <div class="hero-btns">
+        <a href="#quote" class="btn-primary">📋 Get Free Quote</a>
+        <a href="#projects" class="btn-outline">View Projects →</a>
       </div>
     </div>
-    <a href="#about" class="hero-scroll-cue" aria-label="Scroll to explore">
-      <span></span>
-    </a>
     <div class="hero-stats">
       <div class="hero-stat">
         <div class="hero-stat-num">24+</div>
@@ -207,23 +91,12 @@
     </div>
   </section>
 
-  <!-- STATEMENT -->
-  <section class="statement">
-    <div class="statement-tag reveal">— Our Philosophy</div>
-    <h2 class="statement-title reveal">Quality That Speaks For Itself, <em>Trust That's Earned Every Day.</em></h2>
-    <p class="statement-sub reveal">From foundation to final finish, every Meghana Manoj project reflects two decades
-      of craftsmanship, transparent pricing, and an unwavering commitment to the people who trust us with their
-      biggest investment.</p>
-  </section>
-
   <!-- ABOUT -->
   <section class="section" id="about">
     <div class="about-grid">
-      <div class="about-img-wrap reveal reveal-blueprint">
-        <div class="about-img-clip">
-          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=80" alt="Construction team"
-            class="about-img" data-parallax />
-        </div>
+      <div class="about-img-wrap reveal">
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=80" alt="Construction team"
+          class="about-img" />
         <div class="about-img-accent"></div>
         <div class="about-badge">
           <strong>2015</strong>
@@ -247,7 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="about-values reveal reveal-stagger">
+        <div class="about-values">
           <div class="value-item">
             <div class="value-icon">⚙️</div>
             <div class="value-text">
@@ -283,109 +156,54 @@
 
   <!-- SERVICES -->
   <section class="section services-bg" id="services">
-    <div class="services-layout">
-      <div class="section-header reveal">
-        <div class="section-tag">What We Do</div>
-        <h2 class="section-title">Where Our<br /><em>Expertise Lies.</em></h2>
-        <p class="section-sub">From concept to completion, we handle every aspect of your construction project with
-          expertise and care.</p>
-      </div>
-      <div class="services-list reveal reveal-stagger">
-        <button class="service-row" data-target="svc-1" aria-expanded="false">
-          <img src="data/Completed/manoj-heights/building.png" alt="" class="service-row-thumb" />
-          <span class="service-row-name">Residential Construction</span>
-          <span class="service-row-plus" aria-hidden="true">+</span>
-        </button>
-        <div class="service-row-panel" id="svc-1">
-          <p>Custom homes, villas, and apartments built to your exact specifications with premium finishes and
-            superior craftsmanship.</p>
-        </div>
-
-        <button class="service-row" data-target="svc-2" aria-expanded="false">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&q=80" alt="" class="service-row-thumb" />
-          <span class="service-row-name">Commercial Construction</span>
-          <span class="service-row-plus" aria-hidden="true">+</span>
-        </button>
-        <div class="service-row-panel" id="svc-2">
-          <p>Office buildings, retail spaces, and commercial complexes designed for functionality, aesthetics, and
-            lasting durability.</p>
-        </div>
-
-        <button class="service-row" data-target="svc-3" aria-expanded="false">
-          <img src="data/Completed/manoj-enclave/building.png" alt="" class="service-row-thumb" />
-          <span class="service-row-name">Renovation & Remodeling</span>
-          <span class="service-row-plus" aria-hidden="true">+</span>
-        </button>
-        <div class="service-row-panel" id="svc-3">
-          <p>Transform your existing space with thoughtful renovations that enhance beauty, functionality, and
-            property value.</p>
-        </div>
-
-        <button class="service-row" data-target="svc-4" aria-expanded="false">
-          <img src="data/Ongoing/manoj-castle/building.png" alt="" class="service-row-thumb" />
-          <span class="service-row-name">Turnkey Projects</span>
-          <span class="service-row-plus" aria-hidden="true">+</span>
-        </button>
-        <div class="service-row-panel" id="svc-4">
-          <p>Complete end-to-end project management — design, construction, and finishing, all under one roof for a
-            stress-free experience.</p>
-        </div>
-
-        <button class="service-row" data-target="svc-5" aria-expanded="false">
-          <img src="data/Completed/manoj-homes-sainikpuri/building.png" alt="" class="service-row-thumb" />
-          <span class="service-row-name">Interior Works</span>
-          <span class="service-row-plus" aria-hidden="true">+</span>
-        </button>
-        <div class="service-row-panel" id="svc-5">
-          <p>Custom interiors including modular kitchens, wardrobes, false ceilings, and complete interior fit-outs by
-            skilled artisans.</p>
-        </div>
-
-        <button class="service-row" data-target="svc-6" aria-expanded="false">
-          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=200&q=80" alt="" class="service-row-thumb" />
-          <span class="service-row-name">Structural Consulting</span>
-          <span class="service-row-plus" aria-hidden="true">+</span>
-        </button>
-        <div class="service-row-panel" id="svc-6">
-          <p>Expert advice on structural design, layout planning, and civil engineering to ensure safety and
-            compliance with all standards.</p>
-        </div>
-      </div>
+    <div class="section-header reveal">
+      <div class="section-tag">What We Do</div>
+      <h2 class="section-title">Comprehensive<br /><em>Construction Services</em></h2>
+      <p class="section-sub">From concept to completion, we handle every aspect of your construction project with
+        expertise and care.</p>
     </div>
-  </section>
-
-  <!-- PILLARS -->
-  <section class="pillars">
-    <div class="pillars-grid">
-      <div class="pillar-panel pillar-quality reveal">
-        <div class="pillar-content">
-          <h3>Quality</h3>
-          <p>Premium materials and skilled craftsmen on every site — no shortcuts, no compromises.</p>
-        </div>
-        <div class="pillar-bars" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        </div>
-        <div class="pillar-num">01</div>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <div class="service-icon">🏘️</div>
+        <h3>Residential Construction</h3>
+        <p>Custom homes, villas, and apartments built to your exact specifications with premium finishes and superior
+          craftsmanship.</p>
       </div>
-      <div class="pillar-panel pillar-transparency reveal">
-        <div class="pillar-content">
-          <h3>Transparency</h3>
-          <p>Clear, itemized pricing and open communication from the first site visit to final handover.</p>
-        </div>
-        <div class="pillar-bars" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        </div>
-        <div class="pillar-num">02</div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <div class="service-icon">🏢</div>
+        <h3>Commercial Construction</h3>
+        <p>Office buildings, retail spaces, and commercial complexes designed for functionality, aesthetics, and lasting
+          durability.</p>
       </div>
-      <div class="pillar-panel pillar-trust reveal">
-        <div class="pillar-content">
-          <h3>Trust</h3>
-          <p>24+ years of experience and 150+ completed projects — trust that's built brick by brick.</p>
-        </div>
-        <div class="pillar-bars" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        </div>
-        <div class="pillar-num">03</div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <div class="service-icon">🔨</div>
+        <h3>Renovation & Remodeling</h3>
+        <p>Transform your existing space with thoughtful renovations that enhance beauty, functionality, and property
+          value.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <div class="service-icon">🔑</div>
+        <h3>Turnkey Projects</h3>
+        <p>Complete end-to-end project management — design, construction, and finishing, all under one roof for a
+          stress-free experience.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <div class="service-icon">🛋️</div>
+        <h3>Interior Works</h3>
+        <p>Custom interiors including modular kitchens, wardrobes, false ceilings, and complete interior fit-outs by
+          skilled artisans.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <div class="service-icon">📐</div>
+        <h3>Structural Consulting</h3>
+        <p>Expert advice on structural design, layout planning, and civil engineering to ensure safety and compliance
+          with all standards.</p>
       </div>
     </div>
   </section>
@@ -398,11 +216,7 @@
       <p class="section-sub">A showcase of our finest work — each project a testament to our commitment to quality and
         craftsmanship.</p>
     </div>
-    <div class="projects-grid reveal reveal-brick" id="completedProjectsGrid"></div>
-    <div class="projects-nav">
-      <button class="projects-nav-btn" id="projectsPrev" aria-label="Previous projects">←</button>
-      <button class="projects-nav-btn" id="projectsNext" aria-label="Next projects">→</button>
-    </div>
+    <div class="projects-grid reveal" id="completedProjectsGrid"></div>
   </section>
 
   <!-- ONGOING PROJECTS -->
@@ -413,7 +227,7 @@
       <p class="section-sub">We believe in complete transparency. Here's a live view of what we're building right now.
       </p>
     </div>
-    <div class="ongoing-grid reveal reveal-stagger" id="ongoingProjectsGrid"></div>
+    <div class="ongoing-grid reveal" id="ongoingProjectsGrid"></div>
 
     <!-- TECHNICAL SPECIFICATIONS -->
     <div class="section-header reveal" style="margin-top: 6rem;">
@@ -421,7 +235,7 @@
       <h2 class="section-title">Technical<br /><em>Specifications</em></h2>
       <p class="section-sub">Uncompromising technical standards using industry-leading brands and materials.</p>
     </div>
-    <div class="about-values tech-specs-grid reveal reveal-stagger">
+    <div class="about-values tech-specs-grid reveal">
       <div class="value-item">
         <div class="value-icon">🏗️</div>
         <div class="value-text">
@@ -474,7 +288,7 @@
       <div class="section-tag">Client Reviews</div>
       <h2 class="section-title">200+ Happy Clients<br /><em>Trust Us</em></h2>
     </div>
-    <div class="testimonials-grid reveal reveal-flip">
+    <div class="testimonials-grid reveal">
       <div class="testimonial-card">
         <div class="testimonial-stars">★★★★★</div>
         <p class="testimonial-text">"Very good Apartments around Kalyan Nagar, Ciefel Colony and NMDC colony. There are
@@ -553,7 +367,7 @@
             Quote</em><br />Today</h2>
         <p class="section-sub" style="color:rgba(255,255,255,0.56)">Tell us about your project and we'll reach out
           within 24 hours with a detailed, no-obligation estimate tailored to your needs.</p>
-        <div class="quote-features reveal reveal-stagger">
+        <div class="quote-features">
           <div class="quote-feature">Free site visit & assessment</div>
           <div class="quote-feature">Detailed itemized quotation</div>
           <div class="quote-feature">No hidden charges ever</div>
@@ -561,7 +375,7 @@
           <div class="quote-feature">Flexible payment schedules</div>
         </div>
       </div>
-      <div class="quote-form reveal reveal-crane">
+      <div class="quote-form reveal">
         <h3>Request a Quote</h3>
         <p class="quote-form-sub">We'll respond within 24 hours · Free site visit included</p>
         <div class="form-row">
@@ -631,7 +445,7 @@
           <p class="section-sub">We're always happy to discuss your project — no matter how big or small. Reach out
             through any of these channels.</p>
         </div>
-        <div class="contact-items reveal reveal-stagger">
+        <div class="contact-items">
           <div class="contact-item">
             <div class="contact-icon">👤</div>
             <div class="contact-item-text">
@@ -674,10 +488,10 @@
         </div>
       </div>
       <div class="reveal">
-        <div class="map-placeholder reveal reveal-pin">
+        <div class="map-placeholder">
           <div class="office-img-wrap">
             <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80"
-              alt="Meghana Manoj Constructions Office" data-parallax />
+              alt="Meghana Manoj Constructions Office" />
             <div class="office-img-label">
               <span>🏢 Our Office</span>
               <p>Manoj Renuka Complex, 25-40/5/2-B/G1<br />East Anandbagh, Malkajgiri, Hyderabad</p>
@@ -704,9 +518,6 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-bars" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-    </div>
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#home" class="nav-logo" style="margin-bottom: 1.5rem; display: flex; align-items: center;">
@@ -757,10 +568,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 <span>Meghana Manoj Constructions & Builders</span>. All rights reserved. (v2.0.0)</p>
+      <p>© 2025 <span>Meghana Manoj Constructions & Builders</span>. All rights reserved.</p>
       <p>Est. 2015 · Building on experience since 2002 · Malkajgiri, Hyderabad</p>
     </div>
-    <div class="footer-wordmark" aria-hidden="true">Meghana Manoj</div>
   </footer>
 
   <!-- WHATSAPP FLOAT -->

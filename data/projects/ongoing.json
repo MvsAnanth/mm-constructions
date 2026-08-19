@@ -196,5 +196,147 @@
       "percent": 40,
       "note": "RCC structure is complete. Plastering and internal electrical work are currently underway."
     }
+  },
+  {
+    "id": "manoj-homes-nalanda",
+    "name": "Manoj Homes",
+    "tag": "Residential",
+    "shortLoc": "Safilguda, Malkajgiri",
+    "motto": "\"Quality Homes, Trusted Builder\"",
+    "location": "Near Nalanda School, Chandragiricolony, Safilguda, Malkajgiri, Hyderabad",
+    "mapsQuery": "Chandragiri+Colony+Safilguda+Malkajgiri+Hyderabad",
+    "dataDir": "data/Ongoing/manoj-homes-nalanda",
+    "pdf": "data/Ongoing/manoj-homes-nalanda/brochure.pdf",
+    "thumbnail": "data/Ongoing/manoj-homes-nalanda/building.png",
+    "floorplan": [
+      "data/Ongoing/manoj-homes-nalanda/page-2.jpg"
+    ],
+    "brochure": [
+      "data/Ongoing/manoj-homes-nalanda/page-1.jpg",
+      "data/Ongoing/manoj-homes-nalanda/page-2.jpg"
+    ],
+    "desc": "A residential development near Nalanda School in Chandragiricolony, Safilguda, offering spacious 1900 Sft apartments with quality construction and excellent connectivity to Malkajgiri.",
+    "meta": [
+      [
+        "Safilguda, Malkajgiri",
+        "Location"
+      ],
+      [
+        "Limited Units",
+        "Availability"
+      ],
+      [
+        "1900 SFT",
+        "Area"
+      ]
+    ],
+    "progress": {
+      "label": "Construction in progress",
+      "percent": 50,
+      "note": "Structure and finishing works underway."
+    },
+    "specs": [
+      [
+        "Location",
+        "Near Nalanda School, Chandragiricolony, Safilguda, Malkajgiri, Hyderabad"
+      ],
+      [
+        "Type",
+        "Residential Apartments"
+      ],
+      [
+        "Status",
+        "Ongoing — Limited Units Available"
+      ],
+      [
+        "Area",
+        "1900 SFT"
+      ]
+    ]
+  },
+  {
+    "id": "manoj-homes-sitaramnagar",
+    "name": "Manoj Homes",
+    "tag": "Residential",
+    "shortLoc": "Sitaram Nagar, Safilguda",
+    "motto": "\"Quality Homes, Trusted Builder\"",
+    "location": "Sitaram Nagar, Safilguda, Malkajgiri, Hyderabad",
+    "mapsQuery": "Sitaram+Nagar+Safilguda+Malkajgiri+Hyderabad",
+    "dataDir": "data/Ongoing/manoj-homes-sitaramnagar",
+    "pdf": "data/Ongoing/manoj-homes-sitaramnagar/brochure.pdf",
+    "thumbnail": "data/Ongoing/manoj-homes-sitaramnagar/building.png",
+    "floorplan": [
+      "data/Ongoing/manoj-homes-sitaramnagar/page-2.jpg"
+    ],
+    "brochure": [
+      "data/Ongoing/manoj-homes-sitaramnagar/page-1.jpg",
+      "data/Ongoing/manoj-homes-sitaramnagar/page-2.jpg"
+    ],
+    "desc": "A G+2 residential development in Sitaram Nagar, Safilguda, offering spacious 950 Sft floor plans across three levels with premium teak wood joinery and modern fittings.",
+    "meta": [
+      [
+        "Sitaram Nagar, Safilguda",
+        "Location"
+      ],
+      [
+        "Limited Units",
+        "Availability"
+      ],
+      [
+        "950 SFT per floor (2850 SFT total)",
+        "Area"
+      ]
+    ],
+    "progress": {
+      "label": "Construction in progress",
+      "percent": 50,
+      "note": "Structure and finishing works underway."
+    },
+    "specs": [
+      [
+        "Location",
+        "Sitaram Nagar, Safilguda, Malkajgiri, Hyderabad"
+      ],
+      [
+        "Type",
+        "Residential Apartments"
+      ],
+      [
+        "Status",
+        "Ongoing — Limited Units Available"
+      ],
+      [
+        "Structure",
+        "R.C.C. Framed — Sarvotham/Jairaj Steel"
+      ],
+      [
+        "Walls",
+        "9\" Outside, 4½\" Inside Brick Walls"
+      ],
+      [
+        "Joinery",
+        "Indian Teak Wood Frames & Main Door, UPVC Windows with Safety Grills"
+      ],
+      [
+        "Kitchen",
+        "Black Granite Platform with SS Sink"
+      ],
+      [
+        "Flooring",
+        "Vitrified Tiles (2' × 4')"
+      ],
+      [
+        "Electricals",
+        "Concealed Wiring (Nakoda), Anchor Penta Switches"
+      ],
+      [
+        "Plumbing",
+        "CERA WC & Taps, Concealed Piping"
+      ],
+      [
+        "Water Supply",
+        "Bore Water with Motor"
+      ]
+    ]
   }
 ]

@@ -175,6 +175,73 @@ nav.scrolled {
   to { transform: scale(1.06); }
 }
 
+/* Animated hammering worker — same illustration system as the loading
+   screen. Builds the "MEGHANA MANOJ" wordmark beside it, then leans in with
+   a thumbs-up once the wordmark finishes. */
+.hero-build-scene {
+  position: absolute;
+  right: 5%;
+  bottom: 340px;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  animation: heroWorkerIn 1s ease 1.4s both;
+}
+
+svg.hero-worker {
+  position: relative;
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  overflow: visible;
+  /* the figure sits in the left ~2/3 of its viewBox, so a negative right
+     margin brings its right shoulder/hammer up to the "M" without burying it */
+  margin-right: -44px;
+  margin-bottom: -20px;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.7));
+}
+
+.hero-wordmark-plaque {
+  padding-bottom: 10px;
+}
+
+.hero-wordmark {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4.4vw, 3.2rem);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--gold-light);
+}
+
+.hero-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(14px) scale(0.6) rotate(-8deg);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9), 0 0 32px rgba(232, 204, 122, 0.65);
+  animation: heroLetterPop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.hero-letter-space {
+  width: 0.4em;
+}
+
+@keyframes heroLetterPop {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes heroWorkerIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .hero-scrim {
   position: absolute;
   inset: 0;
@@ -269,6 +336,7 @@ nav.scrolled {
   justify-content: space-between;
   gap: 3rem;
   flex-wrap: wrap;
+  max-width: 620px;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
   padding-top: 1.6rem;
 }
@@ -451,6 +519,12 @@ nav.scrolled {
 
 .section-header {
   margin-bottom: 3.6rem;
+}
+
+svg.section-crane {
+  width: 84px;
+  height: 84px;
+  margin-bottom: 0.6rem;
 }
 
 .section-tag {
@@ -2008,6 +2082,10 @@ footer {
     display: none;
   }
 
+  .hero-build-scene {
+    display: none;
+  }
+
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3142,6 +3220,103 @@ html.loader-active {
   0%, 50% { opacity: 0; transform: scale(0.6); }
   62% { opacity: 1; transform: scale(1.08); }
   75%, 100% { opacity: 1; transform: scale(1); }
+}
+
+/* ── HERO WORKER (self-contained; uses hw-* classes so it never collides with
+   the loader's shared .lw-* / .illustration-hammer rules) ──
+   Sequence: hammers the "M" ~4 times → leans its shoulder against the M with
+   the hammer resting down at its side → raises the other arm in a thumbs-up.
+   Arms are drawn as round-capped strokes (limbs) so the joints actually join
+   rather than reading as stacked, disconnected rectangles. */
+.hero-worker .hw-shadow { fill: rgba(0, 0, 0, 0.32); }
+/* Outfit: navy denim trousers, steel-blue work shirt, safety-orange hi-vis
+   vest with cream reflective stripes, yellow hard hat. */
+.hero-worker .hw-leg { fill: #2c3e57; stroke: #16202f; stroke-width: 1; }
+.hero-worker .hw-boot { fill: #1b140d; }
+.hero-worker .hw-shirt { fill: #35597a; stroke: #1f374d; stroke-width: 1.2; }
+.hero-worker .hw-vest { fill: #e8722e; stroke: #a3491a; stroke-width: 1; }
+.hero-worker .hw-vest-stripe { fill: #f3e8cf; }
+.hero-worker .hw-head { fill: #e6a877; stroke: #8a5a35; stroke-width: 1.2; }
+.hero-worker .hw-neck { fill: #d1936a; stroke: #8a5a35; stroke-width: 1; }
+.hero-worker .hw-eye { fill: #241a12; }
+.hero-worker .hw-smile { fill: none; stroke: #241a12; stroke-width: 1.6; stroke-linecap: round; }
+.hero-worker .hw-helmet { fill: #eab308; stroke: #a9800a; stroke-width: 1.2; }
+.hero-worker .hw-helmet-brim { fill: #cf9c06; stroke: #a9800a; stroke-width: 1; }
+.hero-worker .hw-helmet-knob { fill: #cf9c06; stroke: #a9800a; stroke-width: 1; }
+
+/* connected limbs */
+.hero-worker .hw-limb-sleeve { fill: none; stroke: #35597a; stroke-width: 10; stroke-linecap: round; }
+.hero-worker .hw-limb-skin { fill: none; stroke: #e6a877; stroke-width: 9; stroke-linecap: round; }
+.hero-worker .hw-hand { fill: #e6a877; stroke: #8a5a35; stroke-width: 1.2; }
+.hero-worker .hw-hammer-handle { fill: none; stroke: #b5793a; stroke-width: 5.5; stroke-linecap: round; }
+.hero-worker .hw-hammer-head { fill: #cfd3d8; stroke: #3a3d42; stroke-width: 1.6; }
+
+.hero-worker .hw-figure {
+  transform-origin: 78px 145px;
+  animation: hwBob 0.9s ease-in-out 1.4s infinite;
+}
+
+@keyframes hwBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-1.5px); }
+}
+
+/* head watches the text (tilts toward the M) while hammering */
+.hero-worker .hw-head-group {
+  transform-origin: 76px 64px;
+  transform: rotate(12deg);
+}
+
+/* the swinging arm: winds up (raised) then strikes down toward the M.
+   ~6 swings (0.5s each from 1.4s) → hammers for ~3s before the finale */
+.hero-worker .hw-hammer-arm {
+  transform-origin: 90px 76px;
+  transform: rotate(-10deg);
+  animation: hwSwing 0.5s ease-in-out 1.4s 6;
+}
+
+@keyframes hwSwing {
+  0% { transform: rotate(-10deg); }
+  45% { transform: rotate(74deg); }
+  62% { transform: rotate(58deg); }
+  100% { transform: rotate(-10deg); }
+}
+
+/* finale-only poses start hidden */
+.hero-worker .hw-hammer-rest { opacity: 0; }
+.hero-worker .hw-hip { opacity: 0; }
+
+/* ── Finale: a proud "job done" foreman stance — lean toward the M, plant the
+   hammer down at the near side, put the far hand on the hip. Crossfades the
+   hammering/hanging arms to the resting poses (rather than rotating one arm
+   into two roles, which never settled cleanly). ── */
+.hero-worker.lw-celebrate .hw-figure {
+  animation: none;
+  transform: rotate(12deg);
+  transition: transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* head turns from watching the text back to facing front */
+.hero-worker.lw-celebrate .hw-head-group {
+  transform: rotate(-9deg);
+  transition: transform 0.5s ease 0.1s;
+}
+
+.hero-worker.lw-celebrate .hw-hammer-arm,
+.hero-worker.lw-celebrate .hw-arm-rest {
+  animation: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.hero-worker.lw-celebrate .hw-hammer-rest {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.2s;
+}
+
+.hero-worker.lw-celebrate .hw-hip {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.3s;
 }
 
 /* Drill variant */

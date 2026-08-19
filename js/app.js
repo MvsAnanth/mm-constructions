@@ -187,6 +187,40 @@ document.addEventListener('DOMContentLoaded', () => {
   requestAnimationFrame(loop);
 })();
 
+// ── Hero Wordmark Build ──
+// The hero worker hammers "MEGHANA MANOJ" into place letter by letter, then
+// leans in beside it with a thumbs-up once the wordmark finishes building.
+
+(function () {
+  const wordmark = document.getElementById('heroWordmark');
+  const figure = document.querySelector('svg.hero-worker');
+  if (!wordmark || !figure) return;
+
+  const TEXT = 'MEGHANA MANOJ';
+  const LETTER_DELAY_MS = 90;
+  const LETTER_START_MS = 1700; // after the worker's own entrance animation
+  const LETTER_DURATION_MS = 420;
+
+  TEXT.split('').forEach((ch, i) => {
+    const span = document.createElement('span');
+    span.className = 'hero-letter';
+    if (ch === ' ') span.classList.add('hero-letter-space');
+    span.textContent = ch === ' ' ? ' ' : ch;
+    span.style.animationDelay = (LETTER_START_MS + i * LETTER_DELAY_MS) + 'ms';
+    wordmark.appendChild(span);
+  });
+
+  // The worker keeps hammering (~6 swings, 0.5s each, from 1.4s → ~4.4s) a beat
+  // past the wordmark finishing, watching the text, then turns to lean + thumbs-up.
+  const HAMMER_END_MS = 1400 + 6 * 500;
+  const buildEndMs = LETTER_START_MS + (TEXT.length - 1) * LETTER_DELAY_MS + LETTER_DURATION_MS;
+  const celebrateAtMs = Math.max(HAMMER_END_MS, buildEndMs) + 250;
+
+  window.setTimeout(() => {
+    figure.classList.add('lw-celebrate');
+  }, celebrateAtMs);
+})();
+
 // ── Mouse-Tracked 3D Tilt ──
 // Event-delegated on document so it works even on cards rendered later
 // (e.g. project cards, injected by projects.js after this script runs).

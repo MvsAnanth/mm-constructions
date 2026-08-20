@@ -178,6 +178,15 @@ nav.scrolled {
 /* Animated hammering worker — same illustration system as the loading
    screen. Builds the "MEGHANA MANOJ" wordmark beside it, then leans in with
    a thumbs-up once the wordmark finishes. */
+/* The sequence is timer-driven from load, so on short viewports the band can
+   scroll into view after it has already finished. Hold every animation in the
+   scene paused (the entrance keeps its `both` fill, so it stays hidden) until
+   JS marks it visible. */
+.hero-build-scene:not(.is-building),
+.hero-build-scene:not(.is-building) * {
+  animation-play-state: paused;
+}
+
 .hero-build-scene {
   position: absolute;
   right: 5%;
@@ -2069,7 +2078,7 @@ footer {
 /* ─ Tablet & below (≤900px) ─ */
 @media (max-width: 900px) {
   .hero-content {
-    padding: 120px 6% 3.5rem 6%;
+    padding: 104px 6% 2rem 6%;
   }
 
   .hero-content-foot {
@@ -2082,11 +2091,34 @@ footer {
     display: none;
   }
 
+  /* On mobile the hero content is full, so instead of hiding the worker we
+     let the build scene flow as its own centered band just above the stats,
+     at a reduced size, so it stays visible on every device without colliding
+     with the stacked headline/CTA. */
   .hero-build-scene {
+    position: static;
+    order: 1; /* the scene is before .hero-content in the DOM; flow it after */
+    align-self: center;
+    margin: 0 auto 1.25rem;
+  }
+
+  svg.hero-worker {
+    width: 118px;
+    height: 118px;
+    margin-right: -28px;
+    margin-bottom: 0;
+  }
+
+  .hero-build-scene .hero-wordmark {
+    font-size: clamp(1.35rem, 6vw, 1.9rem);
+  }
+
+  .hero-scroll-cue {
     display: none;
   }
 
   .hero-stats {
+    order: 2; /* keep the stats bar below the worker band */
     grid-template-columns: repeat(2, 1fr);
   }
 

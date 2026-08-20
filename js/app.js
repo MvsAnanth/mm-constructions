@@ -194,7 +194,8 @@ document.addEventListener('DOMContentLoaded', () => {
 (function () {
   const wordmark = document.getElementById('heroWordmark');
   const figure = document.querySelector('svg.hero-worker');
-  if (!wordmark || !figure) return;
+  const scene = document.querySelector('.hero-build-scene');
+  if (!wordmark || !figure || !scene) return;
 
   const TEXT = 'MEGHANA MANOJ';
   const LETTER_DELAY_MS = 90;
@@ -216,9 +217,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const buildEndMs = LETTER_START_MS + (TEXT.length - 1) * LETTER_DELAY_MS + LETTER_DURATION_MS;
   const celebrateAtMs = Math.max(HAMMER_END_MS, buildEndMs) + 250;
 
-  window.setTimeout(() => {
-    figure.classList.add('lw-celebrate');
-  }, celebrateAtMs);
+  // CSS keeps the scene paused until `.is-building` lands, so the sequence
+  // starts when it's actually on screen. On mobile the scene flows below the
+  // hero copy and can sit under the fold, where a load-time timer would run
+  // (and finish) before the visitor ever scrolled to it.
+  function start() {
+    scene.classList.add('is-building');
+    window.setTimeout(() => {
+      figure.classList.add('lw-celebrate');
+    }, celebrateAtMs);
+  }
+
+  if (!('IntersectionObserver' in window)) {
+    start();
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      observer.disconnect();
+      start();
+    });
+  }, { threshold: 0.35 });
+
+  observer.observe(scene);
 })();
 
 // ── Mouse-Tracked 3D Tilt ──

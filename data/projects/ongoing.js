@@ -4,31 +4,30 @@ const ONGOING_PROJECTS = [
     name: "Manoj Castle",
     tag: "Residential",
     shortLoc: "SaiRam, Malkajgiri",
-    motto: "\"Building Trust, Brick by Brick.\"",
+    motto: '"Building Trust, Brick by Brick."',
     location: "SaiRam, Malkajgiri, Hyderabad",
     mapsQuery: "SaiRam+Nagar+Malkajgiri+Hyderabad",
     mapsUrl: "https://maps.app.goo.gl/cYwy8Qd3Ms8LygQcA",
-    mapsEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d237.89190426717096!2d78.5362683011906!3d17.446764103206085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1775895884628!5m2!1sen!2sin",
+    mapsEmbed:
+      "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d237.89190426717096!2d78.5362683011906!3d17.446764103206085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1775895884628!5m2!1sen!2sin",
     dataDir: "data/Ongoing/manoj-castle",
     pdf: "data/Ongoing/manoj-castle/brochure.pdf",
     thumbnail: "data/Ongoing/manoj-castle/building.png",
-    floorplan: [
-      "data/Ongoing/manoj-castle/page-2.jpg"
-    ],
+    floorplan: ["data/Ongoing/manoj-castle/page-2.jpg"],
     brochure: [
       "data/Ongoing/manoj-castle/page-1.jpg",
-      "data/Ongoing/manoj-castle/page-2.jpg"
+      "data/Ongoing/manoj-castle/page-2.jpg",
     ],
     desc: "Premium residential development featuring luxury 2 BHK & 3 BHK apartments (1200 SFT each) with high-end teak wood joinery and UPVC windows.",
     meta: [
       ["SaiRam, Malkajgiri", "Location"],
       ["Units 1 & 2", "Availability"],
-      ["1200 SFT", "Area"]
+      ["1200 SFT", "Area"],
     ],
     progress: {
       label: "Finishing works",
       percent: 92,
-      note: "Structure completion reached. Final painting and woodwork in progress."
+      note: "Structure completion reached. Final painting and woodwork in progress.",
     },
     specs: [
       ["Location", "SaiRam, Malkajgiri, Hyderabad"],
@@ -36,62 +35,58 @@ const ONGOING_PROJECTS = [
       ["Units", "2 & 3 BHK Apartments"],
       ["Plot", "Premium Corner Plot"],
       ["Facing", "East & North Facing"],
-      ["Water", "Bore & Manjeera Connection"]
-    ]
+      ["Water", "Bore & Manjeera Connection"],
+    ],
   },
   {
     id: "manoj-homes-gautham",
     name: "Manoj Homes",
     tag: "Residential",
     shortLoc: "Gautham Nagar, Malkajgiri",
-    motto: "\"Quality Homes, Trusted Builder\"",
+    motto: '"Quality Homes, Trusted Builder"',
     location: "Gautham Nagar, Malkajgiri, Hyderabad",
     mapsQuery: "Gautham+Nagar+Malkajgiri+Hyderabad",
     dataDir: "data/Ongoing/manoj-homes-gautham",
     pdf: "data/Ongoing/manoj-homes-gautham/brochure.pdf",
     thumbnail: "data/Ongoing/manoj-homes-gautham/building.png",
-    floorplan: [
-      "data/Ongoing/manoj-homes-gautham/page-2.jpg"
-    ],
+    floorplan: ["data/Ongoing/manoj-homes-gautham/page-2.jpg"],
     brochure: [
       "data/Ongoing/manoj-homes-gautham/page-1.jpg",
-      "data/Ongoing/manoj-homes-gautham/page-2.jpg"
+      "data/Ongoing/manoj-homes-gautham/page-2.jpg",
     ],
     desc: "Premium residential apartments with modern amenities, quality construction, and excellent connectivity in Gautham Nagar, Malkajgiri.",
     meta: [
       ["Gautham Nagar, Malkajgiri", "Location"],
       ["Limited Units", "Availability"],
-      ["Spacious", "Apartments"]
+      ["Spacious", "Apartments"],
     ],
     progress: {
       label: "Construction in progress",
       percent: 52,
-      note: "Construction in progress. Structure and finishing works underway."
+      note: "Construction in progress. Structure and finishing works underway.",
     },
     specs: [
       ["Location", "Gautham Nagar, Malkajgiri, Hyderabad"],
       ["Type", "Premium Residential Apartments"],
       ["Status", "Ongoing — Limited Units Available"],
-      ["Water", "Bore & Manjeera Connection"]
-    ]
+      ["Water", "Bore & Manjeera Connection"],
+    ],
   },
   {
     id: "manoj-homes-anandbagh",
     name: "Meghana Manoj Constructions",
     tag: "Residential",
     shortLoc: "CFL Colony, East Anand Bagh",
-    motto: "\"Residential\"",
+    motto: '"Residential"',
     location: "CFL Colony, East Anand Bagh, Malkajgiri",
     mapsQuery: "CFL+Colony+East+Anand+Bagh+Malkajgiri",
     mapsUrl: "https://maps.app.goo.gl/oypGt5kW8LSsxvQS6",
     dataDir: "data/Ongoing/manoj-homes-anandbagh",
     pdf: "data/Ongoing/manoj-homes-anandbagh/brochure.pdf",
-    floorplan: [
-      "data/Ongoing/manoj-homes-anandbagh/page-2.jpg"
-    ],
+    floorplan: ["data/Ongoing/manoj-homes-anandbagh/page-2.jpg"],
     brochure: [
       "data/Ongoing/manoj-homes-anandbagh/page-1.jpg",
-      "data/Ongoing/manoj-homes-anandbagh/page-2.jpg"
+      "data/Ongoing/manoj-homes-anandbagh/page-2.jpg",
     ],
     desc: "A premium G+2 residential development in CFL Colony, East Anand Bagh, offering spacious layouts and quality construction.",
     specs: [
@@ -100,99 +95,105 @@ const ONGOING_PROJECTS = [
       ["Status", "Ongoing — Limited Units Available"],
       ["Structure", "R.C.C. Framed — Sarvotham/Jairaj Steel"],
       ["Flooring", "2' × 4' Vitrified Tiles"],
-      ["Electricals", "Concealed wiring (Nakoda Company), Anchor Penta switches"],
+      [
+        "Electricals",
+        "Concealed wiring (Nakoda Company), Anchor Penta switches",
+      ],
       ["Plumbing", "Concealed pipeline, CERA sanitaryware & CERA taps"],
-      ["Water Supply", "Bore Water with Motor"]
+      ["Water Supply", "Bore Water with Motor"],
     ],
     thumbnail: "data/Ongoing/manoj-homes-anandbagh/building.png",
     meta: [
       ["CFL Colony, East Anand Bagh", "Location"],
       ["Limited Units", "Availability"],
-      ["1070 SFT", "Area"]
+      ["1070 SFT", "Area"],
     ],
     progress: {
       label: "Structure complete, finishing in progress",
-      percent: 40,
-      note: "RCC structure is complete. Plastering and internal electrical work are currently underway."
-    }
-  },
-    {
-      id: "manoj-homes-nalanda",
-      name: "Manoj Homes",
-      tag: "Residential",
-      shortLoc: "Safilguda, Malkajgiri",
-      motto: "\"Quality Homes, Trusted Builder\"",
-      location: "Near Nalanda School, Chandragiricolony, Safilguda, Malkajgiri, Hyderabad",
-      mapsQuery: "Chandragiri+Colony+Safilguda+Malkajgiri+Hyderabad",
-      dataDir: "data/Ongoing/manoj-homes-nalanda",
-      pdf: "data/Ongoing/manoj-homes-nalanda/brochure.pdf",
-      thumbnail: "data/Ongoing/manoj-homes-nalanda/building.png",
-      floorplan: [
-        "data/Ongoing/manoj-homes-nalanda/page-2.jpg"
-      ],
-      brochure: [
-        "data/Ongoing/manoj-homes-nalanda/page-1.jpg",
-        "data/Ongoing/manoj-homes-nalanda/page-2.jpg"
-      ],
-      desc: "A residential development near Nalanda School in Chandragiricolony, Safilguda, offering spacious 1900 Sft apartments with quality construction and excellent connectivity to Malkajgiri.",
-      meta: [
-        ["Safilguda, Malkajgiri", "Location"],
-        ["Limited Units", "Availability"],
-        ["1900 SFT", "Area"]
-      ],
-      progress: {
-        label: "Construction in progress",
-        percent: 50,
-        note: "Structure and finishing works underway."
-      },
-      specs: [
-        ["Location", "Near Nalanda School, Chandragiricolony, Safilguda, Malkajgiri, Hyderabad"],
-        ["Type", "Residential Apartments"],
-        ["Status", "Ongoing — Limited Units Available"],
-        ["Area", "1900 SFT"]
-      ]
+      percent: 30,
+      note: "RCC structure is complete. Plastering and internal electrical work are currently underway.",
     },
-    {
-      id: "manoj-homes-sitaramnagar",
-      name: "Manoj Homes",
-      tag: "Residential",
-      shortLoc: "Sitaram Nagar, Safilguda",
-      motto: "\"Quality Homes, Trusted Builder\"",
-      location: "Sitaram Nagar, Safilguda, Malkajgiri, Hyderabad",
-      mapsQuery: "Sitaram+Nagar+Safilguda+Malkajgiri+Hyderabad",
-      dataDir: "data/Ongoing/manoj-homes-sitaramnagar",
-      pdf: "data/Ongoing/manoj-homes-sitaramnagar/brochure.pdf",
-      thumbnail: "data/Ongoing/manoj-homes-sitaramnagar/building.png",
-      floorplan: [
-        "data/Ongoing/manoj-homes-sitaramnagar/page-2.jpg"
+  },
+  {
+    id: "manoj-homes-nalanda",
+    name: "Manoj Homes",
+    tag: "Residential",
+    shortLoc: "Safilguda, Malkajgiri",
+    motto: '"Quality Homes, Trusted Builder"',
+    location:
+      "Near Nalanda School, Chandragiricolony, Safilguda, Malkajgiri, Hyderabad",
+    mapsQuery: "Chandragiri+Colony+Safilguda+Malkajgiri+Hyderabad",
+    dataDir: "data/Ongoing/manoj-homes-nalanda",
+    pdf: "data/Ongoing/manoj-homes-nalanda/brochure.pdf",
+    thumbnail: "data/Ongoing/manoj-homes-nalanda/building.png",
+    floorplan: ["data/Ongoing/manoj-homes-nalanda/page-2.jpg"],
+    brochure: [
+      "data/Ongoing/manoj-homes-nalanda/page-1.jpg",
+      "data/Ongoing/manoj-homes-nalanda/page-2.jpg",
+    ],
+    desc: "A residential development near Nalanda School in Chandragiricolony, Safilguda, offering spacious 1900 Sft apartments with quality construction and excellent connectivity to Malkajgiri.",
+    meta: [
+      ["Safilguda, Malkajgiri", "Location"],
+      ["Limited Units", "Availability"],
+      ["1900 SFT", "Area"],
+    ],
+    progress: {
+      label: "Construction in progress",
+      percent: 15,
+      note: "Structure and finishing works underway.",
+    },
+    specs: [
+      [
+        "Location",
+        "Near Nalanda School, Chandragiricolony, Safilguda, Malkajgiri, Hyderabad",
       ],
-      brochure: [
-        "data/Ongoing/manoj-homes-sitaramnagar/page-1.jpg",
-        "data/Ongoing/manoj-homes-sitaramnagar/page-2.jpg"
+      ["Type", "Residential Apartments"],
+      ["Status", "Ongoing — Limited Units Available"],
+      ["Area", "1900 SFT"],
+    ],
+  },
+  {
+    id: "manoj-homes-sitaramnagar",
+    name: "Manoj Homes",
+    tag: "Residential",
+    shortLoc: "Sitaram Nagar, Safilguda",
+    motto: '"Quality Homes, Trusted Builder"',
+    location: "Sitaram Nagar, Safilguda, Malkajgiri, Hyderabad",
+    mapsQuery: "Sitaram+Nagar+Safilguda+Malkajgiri+Hyderabad",
+    dataDir: "data/Ongoing/manoj-homes-sitaramnagar",
+    pdf: "data/Ongoing/manoj-homes-sitaramnagar/brochure.pdf",
+    thumbnail: "data/Ongoing/manoj-homes-sitaramnagar/building.png",
+    floorplan: ["data/Ongoing/manoj-homes-sitaramnagar/page-2.jpg"],
+    brochure: [
+      "data/Ongoing/manoj-homes-sitaramnagar/page-1.jpg",
+      "data/Ongoing/manoj-homes-sitaramnagar/page-2.jpg",
+    ],
+    desc: "A G+2 residential development in Sitaram Nagar, Safilguda, offering spacious 950 Sft floor plans across three levels with premium teak wood joinery and modern fittings.",
+    meta: [
+      ["Sitaram Nagar, Safilguda", "Location"],
+      ["Limited Units", "Availability"],
+      ["950 SFT per floor (2850 SFT total)", "Area"],
+    ],
+    progress: {
+      label: "Construction in progress",
+      percent: 10,
+      note: "Structure and finishing works underway.",
+    },
+    specs: [
+      ["Location", "Sitaram Nagar, Safilguda, Malkajgiri, Hyderabad"],
+      ["Type", "Residential Apartments"],
+      ["Status", "Ongoing — Limited Units Available"],
+      ["Structure", "R.C.C. Framed — Sarvotham/Jairaj Steel"],
+      ["Walls", '9" Outside, 4½" Inside Brick Walls'],
+      [
+        "Joinery",
+        "Indian Teak Wood Frames & Main Door, UPVC Windows with Safety Grills",
       ],
-      desc: "A G+2 residential development in Sitaram Nagar, Safilguda, offering spacious 950 Sft floor plans across three levels with premium teak wood joinery and modern fittings.",
-      meta: [
-        ["Sitaram Nagar, Safilguda", "Location"],
-        ["Limited Units", "Availability"],
-        ["950 SFT per floor (2850 SFT total)", "Area"]
-      ],
-      progress: {
-        label: "Construction in progress",
-        percent: 50,
-        note: "Structure and finishing works underway."
-      },
-      specs: [
-        ["Location", "Sitaram Nagar, Safilguda, Malkajgiri, Hyderabad"],
-        ["Type", "Residential Apartments"],
-        ["Status", "Ongoing — Limited Units Available"],
-        ["Structure", "R.C.C. Framed — Sarvotham/Jairaj Steel"],
-        ["Walls", "9\" Outside, 4½\" Inside Brick Walls"],
-        ["Joinery", "Indian Teak Wood Frames & Main Door, UPVC Windows with Safety Grills"],
-        ["Kitchen", "Black Granite Platform with SS Sink"],
-        ["Flooring", "Vitrified Tiles (2' × 4')"],
-        ["Electricals", "Concealed Wiring (Nakoda), Anchor Penta Switches"],
-        ["Plumbing", "CERA WC & Taps, Concealed Piping"],
-        ["Water Supply", "Bore Water with Motor"]
-      ]
-    }
+      ["Kitchen", "Black Granite Platform with SS Sink"],
+      ["Flooring", "Vitrified Tiles (2' × 4')"],
+      ["Electricals", "Concealed Wiring (Nakoda), Anchor Penta Switches"],
+      ["Plumbing", "CERA WC & Taps, Concealed Piping"],
+      ["Water Supply", "Bore Water with Motor"],
+    ],
+  },
 ];

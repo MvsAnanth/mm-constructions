@@ -32,3 +32,6 @@ graphify-out/
 
 # Logs
 *.log
+
+# Playwright test artifacts (scratch screenshots/traces from dev sessions)
+.playwright-mcp/

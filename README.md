@@ -41,6 +41,8 @@ scripts/
   onboard.sh            — Mac/Linux onboarding wrapper (Node.js)
   onboard.ps1           — Windows onboarding wrapper (Node.js)
   resolve-maps.js       — Regenerates data/projects/maps.js
+  start-server.sh       — Start local dev server & open browser
+  stop-server.sh        — Stop the running dev server
 docs/
   ONBOARDING.md         — Full onboarding guide for developers
 VERSION                 — Current release version
@@ -69,7 +71,31 @@ and dependency installation instructions.
 
 ## Running Locally
 
-The data files use `<script>` tags and cannot be opened via `file://`. Use a local server:
+The data files use `<script>` tags and cannot be opened via `file://`. Use the
+included dev server scripts:
+
+### Start the server
+
+```bash
+./scripts/start-server.sh          # starts on port 8080 (default)
+./scripts/start-server.sh 3000     # or pick a custom port
+```
+
+This will:
+- Serve the site from the project root using Python's built-in HTTP server
+- Automatically open your browser to [http://localhost:8080](http://localhost:8080)
+- Track the server process so it can be stopped cleanly
+- Prevent accidental double-starts
+
+### Stop the server
+
+```bash
+./scripts/stop-server.sh
+```
+
+### Manual alternative
+
+If you prefer not to use the scripts, any local HTTP server will work:
 
 ```bash
 python3 -m http.server 8080
@@ -90,12 +116,14 @@ Then open [http://localhost:8080](http://localhost:8080).
 
 ## Scripts Reference
 
-| Script            | Command                        | Purpose                                      |
-| ----------------- | ------------------------------ | -------------------------------------------- |
-| `onboard.py`      | `python3 scripts/onboard.py`   | **Any OS:** onboard new PDFs (no npm needed) |
-| `onboard.sh`      | `./scripts/onboard.sh`         | Mac/Linux: onboard new PDFs (Node.js)        |
-| `onboard.ps1`     | `.\scripts\onboard.ps1`        | Windows: onboard new PDFs (Node.js)          |
-| `resolve-maps.js` | `node scripts/resolve-maps.js` | Refresh all map embed URLs                   |
+| Script             | Command                          | Purpose                                      |
+| ------------------ | -------------------------------- | -------------------------------------------- |
+| `onboard.py`       | `python3 scripts/onboard.py`     | **Any OS:** onboard new PDFs (no npm needed) |
+| `onboard.sh`       | `./scripts/onboard.sh`           | Mac/Linux: onboard new PDFs (Node.js)        |
+| `onboard.ps1`      | `.\scripts\onboard.ps1`          | Windows: onboard new PDFs (Node.js)          |
+| `resolve-maps.js`  | `node scripts/resolve-maps.js`   | Refresh all map embed URLs                   |
+| `start-server.sh`  | `./scripts/start-server.sh`      | Start local dev server & open browser        |
+| `stop-server.sh`   | `./scripts/stop-server.sh`       | Stop the running dev server                  |
 
 ## Version
 

@@ -30,6 +30,9 @@ data/Processed/
 # graphify
 graphify-out/
 
+# Dev server
+.server.pid
+
 # Logs
 *.log
 

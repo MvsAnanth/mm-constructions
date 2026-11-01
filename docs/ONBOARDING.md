@@ -56,7 +56,7 @@ both at the same time.
 5. **Done.** The script will:
    - Create `data/Completed/<id>/` or `data/Ongoing/<id>/`
    - Copy the PDF as `brochure.pdf` inside that folder
-   - Extract `page-1.jpg`, `page-2.jpg`, `building.png` from the PDF
+   - Extract `page-1.jpg`, `page-2.jpg`, and generate `building.png` / `thumbnail.png` (standalone 3D building elevation)
    - Append the project entry to both `.js` and `.json` data files
    - Move the original PDF to `data/Processed/Completed/` or `data/Processed/Ongoing/`
    - Run `node scripts/resolve-maps.js` to geocode the new project's location
@@ -116,7 +116,8 @@ data/
 ├── Completed/
 │   ├── manoj-heights/          ← one folder per project (named by ID)
 │   │   ├── brochure.pdf        ← full brochure PDF
-│   │   ├── building.png        ← cover image (= page-1.jpg copy)
+│   │   ├── building.png        ← 3D building elevation render (standalone, card thumbnail)
+│   │   ├── thumbnail.png       ← card thumbnail copy
 │   │   ├── page-1.jpg          ← brochure cover page
 │   │   └── page-2.jpg          ← floor plan page
 │   └── ...
@@ -249,7 +250,23 @@ The onboarding script writes to both simultaneously.
 ## Running Locally
 
 The site is static HTML. Because of browser security restrictions, the data files
-**cannot be loaded via `file://`** (CORS). Use a local HTTP server:
+**cannot be loaded via `file://`** (CORS). Use the included dev server scripts:
+
+**Start the server:**
+```bash
+./scripts/start-server.sh          # starts on port 8080 (default)
+./scripts/start-server.sh 3000     # or pick a custom port
+```
+
+The script starts a Python HTTP server, tracks its PID, and auto-opens your
+browser. It will warn you if a server is already running.
+
+**Stop the server:**
+```bash
+./scripts/stop-server.sh
+```
+
+**Manual alternative** (if you prefer not to use the scripts):
 
 ```bash
 # Python (built-in)
@@ -272,5 +289,7 @@ Then open [http://localhost:8080](http://localhost:8080).
 | `scripts/onboard.ps1` | `.\scripts\onboard.ps1` | Node.js | Windows: check deps + run onboarding |
 | `scripts/onboard.js` | `node scripts/onboard.js` | Node.js | Core interactive onboarding logic (called by .sh/.ps1) |
 | `scripts/resolve-maps.js` | `node scripts/resolve-maps.js` | Node.js | Regenerate `data/projects/maps.js` |
+| `scripts/start-server.sh` | `./scripts/start-server.sh [port]` | Python 3 | Start local dev server on given port (default 8080) & open browser |
+| `scripts/stop-server.sh` | `./scripts/stop-server.sh` | Bash | Stop the running dev server |
 
 > `onboard.py` and `onboard.js` are functionally identical — use whichever runtime is available on your machine. Both write the same output.

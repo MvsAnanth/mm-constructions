@@ -187,6 +187,63 @@ document.addEventListener('DOMContentLoaded', () => {
   requestAnimationFrame(loop);
 })();
 
+// ── Hero Wordmark Build ──
+// The hero worker hammers "MEGHANA MANOJ" into place letter by letter, then
+// leans in beside it with a thumbs-up once the wordmark finishes building.
+
+(function () {
+  const wordmark = document.getElementById('heroWordmark');
+  const figure = document.querySelector('svg.hero-worker');
+  const scene = document.querySelector('.hero-build-scene');
+  if (!wordmark || !figure || !scene) return;
+
+  const TEXT = 'MEGHANA MANOJ';
+  const LETTER_DELAY_MS = 90;
+  const LETTER_START_MS = 1700; // after the worker's own entrance animation
+  const LETTER_DURATION_MS = 420;
+
+  TEXT.split('').forEach((ch, i) => {
+    const span = document.createElement('span');
+    span.className = 'hero-letter';
+    if (ch === ' ') span.classList.add('hero-letter-space');
+    span.textContent = ch === ' ' ? ' ' : ch;
+    span.style.animationDelay = (LETTER_START_MS + i * LETTER_DELAY_MS) + 'ms';
+    wordmark.appendChild(span);
+  });
+
+  // The worker keeps hammering (~6 swings, 0.5s each, from 1.4s → ~4.4s) a beat
+  // past the wordmark finishing, watching the text, then turns to lean + thumbs-up.
+  const HAMMER_END_MS = 1400 + 6 * 500;
+  const buildEndMs = LETTER_START_MS + (TEXT.length - 1) * LETTER_DELAY_MS + LETTER_DURATION_MS;
+  const celebrateAtMs = Math.max(HAMMER_END_MS, buildEndMs) + 250;
+
+  // CSS keeps the scene paused until `.is-building` lands, so the sequence
+  // starts when it's actually on screen. On mobile the scene flows below the
+  // hero copy and can sit under the fold, where a load-time timer would run
+  // (and finish) before the visitor ever scrolled to it.
+  function start() {
+    scene.classList.add('is-building');
+    window.setTimeout(() => {
+      figure.classList.add('lw-celebrate');
+    }, celebrateAtMs);
+  }
+
+  if (!('IntersectionObserver' in window)) {
+    start();
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      observer.disconnect();
+      start();
+    });
+  }, { threshold: 0.35 });
+
+  observer.observe(scene);
+})();
+
 // ── Mouse-Tracked 3D Tilt ──
 // Event-delegated on document so it works even on cards rendered later
 // (e.g. project cards, injected by projects.js after this script runs).
